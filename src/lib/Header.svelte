@@ -38,12 +38,12 @@
         <li>
           <a on:click={showMobile} href="/">Home</a>
         </li>
-        <li><a href="/about-us">About Us</a></li>
+        <li><a href="/about">About Us</a></li>
         <li>
           <a on:click={showMobile} href="/blog">Blog</a>
         </li>
         <li>
-          <a on:click={showMobile} href="/contact-us">Contact Us</a>
+          <a on:click={showMobile} href="/contact">Contact Us</a>
         </li>
       </ul>
     {/if}
