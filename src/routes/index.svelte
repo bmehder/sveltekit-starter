@@ -29,7 +29,7 @@
       </p>
     </div>
   </Section>
-  <Section padding="4rem 2rem">
+  <Section padding="4rem 2rem" title="2/3 + 1/3 Columns">
     <div class="flex">
       <p style="flex: 2;">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
@@ -53,7 +53,7 @@
       </p>
     </div>
   </Section>
-  <Section padding="4rem 2rem" background="darkorange">
+  <Section padding="4rem 2rem" background="darkorange" title="3 Columns">
     <div class="flex">
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
