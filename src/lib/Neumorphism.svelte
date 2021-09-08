@@ -54,7 +54,7 @@
     left: 0;
     width: 100%;
     height: 82px;
-    background: url(/assets/logo.png) #e5e5e5;
+    background: url(/logo.png) #e5e5e5;
     background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
