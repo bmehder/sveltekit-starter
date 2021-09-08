@@ -21,7 +21,7 @@
     position: relative;
     width: 230px;
     height: 410px;
-    background: url('iPhone.png') #fff;
+    background: url('/iPhone.png') #fff;
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@
     left: -90px;
     width: 90px;
     height: 100%;
-    background: url('text.png') #f2f2f2;
+    background: url('/text.png') #f2f2f2;
     background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
