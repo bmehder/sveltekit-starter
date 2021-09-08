@@ -7,11 +7,12 @@
   export let color = ''
   export let titleColor = '#001515'
   export let align = 'center'
+  export let height = ''
 </script>
 
 <section
   class:boxed
-  style="background:{background};color:{color};margin:{margin};padding:{padding};"
+  style="height:{height};background:{background};color:{color};margin:{margin};padding:{padding};"
 >
   <div class="content-wrap">
     {#if title}

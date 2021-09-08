@@ -22,6 +22,7 @@
       <li><a href="/">Home</a></li>
       <li><a href="/about">About Us</a></li>
       <li><a href="/blog">Blog</a></li>
+      <li><a href="/components">Components</a></li>
       <li><a href="/contact">Contact Us</a></li>
     </ul>
   </nav>
@@ -42,6 +43,7 @@
         <li>
           <a on:click={showMobile} href="/blog">Blog</a>
         </li>
+        <li><a on:click={showMobile} href="/components">Components</a></li>
         <li>
           <a on:click={showMobile} href="/contact">Contact Us</a>
         </li>
