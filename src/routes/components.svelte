@@ -3,7 +3,7 @@
   import Audio from '$lib/Audio.svelte'
   import Dragable from '$lib/Dragable.svelte'
   import Fetcher from '$lib/Fetcher.svelte'
-  import Gallery from '$lib/Gallery/Gallery.svelte'
+  // import Gallery from '$lib/Gallery/Gallery.svelte'
   import Gooey from '$lib/Gooey.svelte'
   import Hoverton from '$lib/Hoverton.svelte'
   import Isometric from '$lib/Isometric.svelte'
