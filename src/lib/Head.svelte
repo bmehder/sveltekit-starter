@@ -1,7 +1,3 @@
-<script>
-  import CSS from '$lib/CSS.svelte'
-</script>
-
 <svelte:head>
   <title>SvelteKit Starter</title>
   <link
@@ -12,5 +8,3 @@
     referrerpolicy="no-referrer"
   />
 </svelte:head>
-
-<CSS />

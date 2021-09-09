@@ -137,9 +137,7 @@
   title="Slider"
   titleColor="white"
 >
-  <div
-    style="max-width: 500px;margin:auto;background:#f1f1f1;border-radius:8px;"
-  >
+  <div style="max-width: 600px;margin:auto;border-radius:8px;">
     <Slider />
   </div>
 </Section>

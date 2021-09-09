@@ -1,25 +1,37 @@
 <script>
-  import { testimonials } from './data.js'
-  import { fly } from 'svelte/transition'
+  import { TESTIMONIALS } from './data'
+  import Testimonial from './Testimonial.svelte'
+  import Controls from './Controls.svelte'
+  import Footer from './Footer.svelte'
 
-  export const speed = 3
+  export let speed = 3
+  export let isShowNumber = false
 
-  let testimonialNum = 0
+  let testimonialIndex = 0
+  let horizontalSlideDirection = 400
+  let timerId = null
+  let isPaused = false
+
+  const changeDirection = xOffset => (horizontalSlideDirection = xOffset)
 
   const goForward = () => {
-    testimonialNum < testimonials.length - 1
-      ? (testimonialNum += 1)
-      : (testimonialNum = 0)
+    clearTimeout(timerId)
+    changeDirection(-400)
+    testimonialIndex < TESTIMONIALS.length - 1
+      ? (testimonialIndex += 1)
+      : (testimonialIndex = 0)
   }
 
   const goBack = () => {
-    testimonialNum > 0
-      ? (testimonialNum -= 1)
-      : (testimonialNum = testimonials.length - 1)
+    clearTimeout(timerId)
+    changeDirection(400)
+    testimonialIndex > 0
+      ? (testimonialIndex -= 1)
+      : (testimonialIndex = TESTIMONIALS.length - 1)
   }
 </script>
 
-<!-- <svelte:head>
+<svelte:head>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -27,63 +39,50 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-</svelte:head> -->
+</svelte:head>
 
 <aside>
-  <i class="fa fa-angle-left fa-2x" on:click={goBack} />
-
-  {#key testimonialNum}
-    <blockquote in:fly={{ x: 400 }}>
-      <p>"{testimonials[testimonialNum].text}"</p>
-      <cite>
-        <a href={testimonials[testimonialNum].url} target="_blank">
-          <span>
-            {#each Array(5) as item}
-              <i class="fa fa-star" />
-            {/each}
-          </span>
-        </a>
-        <p>{testimonials[testimonialNum].name}</p>
-      </cite>
-    </blockquote>
-  {/key}
-
-  <i class="fa fa-angle-right fa-2x" on:click={goForward} />
+  <Controls direction="left" on:click={goBack} />
+  <Testimonial
+    bind:testimonialIndex
+    bind:timerId
+    {horizontalSlideDirection}
+    {speed}
+    {goForward}
+  />
+  <Controls direction="right" on:click={goForward} />
 </aside>
+
+<Footer
+  {isShowNumber}
+  {testimonialIndex}
+  {isPaused}
+  length={TESTIMONIALS.length}
+/>
 
 <style>
   aside {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2em;
+    max-width: 600px;
     min-height: 150px;
+    margin: 0 auto;
+    padding: 1em;
+    background: hsl(182, 45%, 85%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    border: 4px solid hsl(182, 45%, 50%);
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.14);
+    overflow: hidden;
   }
-  blockquote {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2em;
-    line-height: 1.5;
-    font-style: italic;
-    text-align: justify;
-  }
-  cite {
-    text-align: center;
-  }
-  span {
-    display: flex;
-    gap: 2px;
-    min-width: 100px;
-    padding-top: 0.5em;
-  }
-  p {
-    margin: 0;
-  }
-  i {
-    padding: 5px;
-    background: #3fbbc0;
-    color: white;
-    border-radius: 4px;
+  @media screen and (max-width: 600px) {
+    aside {
+      width: 320px;
+      margin: auto;
+    }
   }
 </style>
