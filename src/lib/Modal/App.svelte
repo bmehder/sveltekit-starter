@@ -31,7 +31,7 @@
 {#if modal}
   <Modal on:close={close}>
     <!-- <Form on:close={close} /> -->
-    <h3>Hi, I'm a modal.</h3>
+    <h3>Hi, I'm a modal with a blured background.</h3>
   </Modal>
 {/if}
 
