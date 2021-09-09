@@ -39,7 +39,7 @@
         <li>
           <a on:click={showMobile} href="/">Home</a>
         </li>
-        <li><a href="/about">About Us</a></li>
+        <li><a on:click={showMobile} href="/about">About Us</a></li>
         <li>
           <a on:click={showMobile} href="/blog">Blog</a>
         </li>

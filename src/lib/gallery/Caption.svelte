@@ -1,8 +1,8 @@
 <script>
-  import { createEventDispatcher } from "svelte";
-  export let caption;
+  import { createEventDispatcher } from 'svelte'
+  export let caption
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher()
 </script>
 
 <div class="caption-container">
@@ -10,7 +10,8 @@
   <a
     href="#arrowL"
     class="arrow prev"
-    on:click|preventDefault={() => dispatch('prevClick')}>
+    on:click|preventDefault={() => dispatch('prevClick')}
+  >
     &#10094;
   </a>
   <!-- Caption -->
@@ -19,10 +20,10 @@
   <a
     href="#arrowR"
     class="arrow next"
-    on:click|preventDefault={() => dispatch('nextClick')}>
+    on:click|preventDefault={() => dispatch('nextClick')}
+  >
     &#10095;
   </a>
-
 </div>
 
 <style>
@@ -52,6 +53,7 @@
     font-weight: bold;
     font-size: 2rem;
     border-radius: 0 3px 3px 0;
+    text-decoration: none;
     user-select: none;
     -webkit-user-select: none;
   }

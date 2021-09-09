@@ -1,0 +1,68 @@
+import { bounceOut, backOut, elasticOut } from 'svelte/easing'
+
+export const skillsData = [
+  {
+    skill: 'HTML',
+    percent: 100,
+    color: '#8ECAE6',
+    delay: 0,
+    duration: 2000,
+    easing: bounceOut,
+  },
+  {
+    skill: 'CSS',
+    percent: 90,
+    color: '#219EBC',
+    delay: 500,
+    duration: 2000,
+    easing: bounceOut,
+  },
+  {
+    skill: 'JS',
+    percent: 80,
+    color: '#023047',
+    delay: 1000,
+    duration: 2000,
+    easing: bounceOut,
+  },
+  {
+    skill: 'Svelte',
+    percent: 90,
+    color: '#FB8500',
+    delay: 1500,
+    duration: 2000,
+    easing: bounceOut,
+  },
+  {
+    skill: 'SvelteKit',
+    percent: 75,
+    color: '#FFB703',
+    delay: 1600,
+    duration: 2000,
+    easing: bounceOut,
+  },
+  {
+    skill: 'Strapi',
+    percent: 52,
+    color: '#8ECAE6',
+    delay: 2400,
+    duration: 2000,
+    easing: bounceOut,
+  },
+  {
+    skill: 'GitHub',
+    percent: 50,
+    color: '#219EBC',
+    delay: 1900,
+    duration: 2000,
+    easing: bounceOut,
+  },
+  {
+    skill: 'Netlify',
+    percent: 80,
+    color: '#023047',
+    delay: 2900,
+    duration: 2000,
+    easing: bounceOut,
+  },
+]

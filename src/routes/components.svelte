@@ -1,11 +1,20 @@
 <script>
   import Accordion from '$lib/Accordion/Accordion.svelte'
   import Audio from '$lib/Audio.svelte'
+  import Dragable from '$lib/Dragable.svelte'
   import Fetcher from '$lib/Fetcher.svelte'
+  import Gallery from '$lib/Gallery/Gallery.svelte'
   import Gooey from '$lib/Gooey.svelte'
   import Hoverton from '$lib/Hoverton.svelte'
   import Isometric from '$lib/Isometric.svelte'
+  import BounceNav from '$lib/BounceNav.svelte'
+  import Modal from '$lib/Modal/App.svelte'
   import Neumorphism from '$lib/Neumorphism.svelte'
+  import Notice from '$lib/Notice.svelte'
+  import Slider from '$lib/Slider/Slider.svelte'
+  import Skills from '$lib/Skills/Skills.svelte'
+  import Popup from '$lib/Popup.svelte'
+  import Tabs from '$lib/Tabs/Tabs.svelte'
   import Timeline from '$lib/Timeline/App.svelte'
   import Typewriter from '$lib/Typewriter.svelte'
   import Video from '$lib/Video.svelte'
@@ -36,8 +45,34 @@
   <Audio />
 </Section>
 
-<Section padding="4rem 0" title="Client-Side Fetcher">
+<Section padding="4rem 2rem" title="Bounce Down Nav">
+  <BounceNav />
+</Section>
+
+<Section
+  padding="4rem 2rem"
+  height="100vh"
+  background="url('https://source.unsplash.com/random/') no-repeat center center/cover"
+  title="Dragable"
+  titleColor="white"
+>
+  <Dragable>
+    <h3>Dragable</h3>
+  </Dragable>
+  <Dragable>
+    <h3>Dragable 2</h3>
+  </Dragable>
+  <Dragable>
+    <h3>Dragable 3</h3>
+  </Dragable>
+</Section>
+
+<Section padding="4rem 0" title="Async Data Fetcher">
   <Fetcher />
+</Section>
+
+<Section padding="4rem 2rem" title="Gallery">
+  <Gallery />
 </Section>
 
 <Section
@@ -63,8 +98,43 @@
   <Isometric />
 </Section>
 
-<Section padding="4rem 0 6rem" title="Neumorphism">
+<Section>
+  <Modal />
+</Section>
+
+<Section padding="4rem 0 6rem" background="#e8eaf6" title="Neumorphism">
   <Neumorphism />
+</Section>
+
+<Section padding="4rem 2rem" title="Notice">
+  <Notice padding="2em"
+    ><span style="font-size: 1.5em;line-height: 1.5em;"
+      >Click the "x", and I will disapear. I am have lots of props (padding,
+      background, fontSize, color, borderRadius, boxShadow)</span
+    ></Notice
+  >
+</Section>
+
+<Section padding="4rem 2rem" title="Popup">
+  <Popup />
+</Section>
+
+<Section padding="4rem 2rem" title="Skills">
+  <Skills />
+</Section>
+
+<Section padding="4rem 0 6rem" title="Slider">
+  <div
+    style="max-width: 500px;margin:auto;background:#f1f1f1;border-radius:8px;"
+  >
+    <Slider />
+  </div>
+</Section>
+
+<Section background="#f1f1f1" padding="4rem 2rem" title="Tabs">
+  <div style="width: 600px;margin: auto;">
+    <Tabs />
+  </div>
 </Section>
 
 <Section

@@ -120,11 +120,11 @@
       -16px -32px 64px rgba(255, 255, 255, 0.6);
     transform: scale(0.95);
   }
-  figure {
+  /* figure {
     height: 100px;
   }
   img {
     width: 300px;
     height: auto;
-  }
+  } */
 </style>
