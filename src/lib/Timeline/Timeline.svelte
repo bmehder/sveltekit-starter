@@ -37,7 +37,7 @@
     max-width: 960px;
     margin: auto;
     padding: 2rem;
-    background: dodgerblue;
+    /* background: dodgerblue; */
   }
 
   /* The actual timeline (the vertical ruler) */

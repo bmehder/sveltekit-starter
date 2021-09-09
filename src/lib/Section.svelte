@@ -8,11 +8,12 @@
   export let titleColor = '#001515'
   export let align = 'center'
   export let height = ''
+  export let minHeight = ''
 </script>
 
 <section
   class:boxed
-  style="height:{height};background:{background};color:{color};margin:{margin};padding:{padding};"
+  style="height:{height};min-height:{minHeight};background:{background};color:{color};margin:{margin};padding:{padding};"
 >
   <div class="content-wrap">
     {#if title}

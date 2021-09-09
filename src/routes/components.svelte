@@ -5,6 +5,7 @@
   import Fetcher from '$lib/Fetcher.svelte'
   // import Gallery from '$lib/Gallery/Gallery.svelte'
   import Gooey from '$lib/Gooey.svelte'
+  import Hero from '$lib/Hero.svelte'
   import Hoverton from '$lib/Hoverton.svelte'
   import Isometric from '$lib/Isometric.svelte'
   import BounceNav from '$lib/BounceNav.svelte'
@@ -30,13 +31,14 @@
   <h3>More coming soon...</h3>
 </Section>
 
-<Section padding="4rem 2rem" title="Accordion">
+<Section minHeight="100vh" padding="4rem 2rem" title="Accordion">
   <div id="#Accordion">
     <Accordion />
   </div>
 </Section>
 
 <Section
+  minHeight="100vh"
   padding="4rem 2rem"
   title="Audio Player"
   background="black"
@@ -45,13 +47,13 @@
   <Audio />
 </Section>
 
-<Section padding="4rem 2rem" title="Bounce Down Nav">
+<Section minHeight="100vh" padding="4rem 2rem" title="Bounce Down Nav">
   <BounceNav />
 </Section>
 
 <Section
   padding="4rem 2rem"
-  height="100vh"
+  minHeight="100vh"
   background="url('https://source.unsplash.com/random/') no-repeat center center/cover"
   title="Dragable"
   titleColor="white"
@@ -76,7 +78,7 @@
 </Section> -->
 
 <Section
-  height="50vh"
+  minHeight="100vh"
   padding="4rem 0"
   title="Gooey SVG Spinner"
   background="black"
@@ -85,11 +87,16 @@
   <Gooey />
 </Section>
 
-<Section padding="4rem 0" title="Hover Button">
+<Section minHeight="100vh" padding="4rem 0" background="#f1f1f1" title="Hero">
+  <Hero />
+</Section>
+
+<Section minHeight="100vh" padding="4rem 0" title="Hover Button">
   <Hoverton />
 </Section>
 
 <Section
+  minHeight="100vh"
   padding="4rem 0"
   title="Isometric Text"
   background="black"
@@ -102,11 +109,11 @@
   <Modal />
 </Section>
 
-<Section padding="4rem 0 6rem" background="#e8eaf6" title="Neumorphism">
+<Section padding="4rem 0 2rem" background="#e8eaf6" title="Neumorphism">
   <Neumorphism />
 </Section>
 
-<Section padding="4rem 2rem" title="Notice">
+<Section minHeight="100vh" padding="4rem 2rem" title="Notice">
   <Notice padding="2em"
     ><span style="font-size: 1.5em;line-height: 1.5em;"
       >Click the "x", and I will disapear. I am have lots of props (padding,
@@ -115,15 +122,21 @@
   >
 </Section>
 
-<Section padding="4rem 2rem" title="Popup">
+<Section padding="4rem 2rem" background="black" title="Popup">
   <Popup />
 </Section>
 
-<Section padding="4rem 2rem" title="Skills">
+<Section minHeight="100vh" padding="4rem 2rem" title="Skills">
   <Skills />
 </Section>
 
-<Section padding="4rem 0 6rem" title="Slider">
+<Section
+  minHeight="100vh"
+  padding="4rem 2rem"
+  background="black"
+  title="Slider"
+  titleColor="white"
+>
   <div
     style="max-width: 500px;margin:auto;background:#f1f1f1;border-radius:8px;"
   >
@@ -131,7 +144,12 @@
   </div>
 </Section>
 
-<Section background="#f1f1f1" padding="4rem 2rem" title="Tabs">
+<Section
+  minHeight="100vh"
+  background="#f1f1f1"
+  padding="4rem 2rem"
+  title="Tabs"
+>
   <div style="width: 600px;margin: auto;">
     <Tabs />
   </div>
@@ -151,6 +169,7 @@
 </Section>
 
 <Section
+  minHeight="100vh"
   padding="4rem 0 6rem"
   title="Video Player"
   background="black"

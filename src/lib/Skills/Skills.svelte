@@ -16,13 +16,6 @@
 {/key}
 
 <style>
-  :global(body) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    background-image: radial-gradient(transparent, rgba(2, 48, 71, 0.2) 100%);
-  }
   section {
     width: 90%;
     margin: 2em auto;
