@@ -71,9 +71,9 @@
   <Fetcher />
 </Section>
 
-<Section padding="4rem 2rem" title="Gallery">
+<!-- <Section padding="4rem 2rem" title="Gallery">
   <Gallery />
-</Section>
+</Section> -->
 
 <Section
   height="50vh"
