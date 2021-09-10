@@ -6,6 +6,8 @@
   const toggleNav = () => (isNavOpen = !isNavOpen)
 </script>
 
+<svelte:window on:keydown={event => event.key === 'Escape' && toggleNav()} />
+
 <div>
   {#if isNavOpen}
     <nav
