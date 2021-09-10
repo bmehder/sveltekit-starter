@@ -1,21 +1,14 @@
 <script>
+  import { fetchData, log } from './utils'
   import { fly } from 'svelte/transition'
   import Gooey from './Gooey.svelte'
+
   export let endpoint =
     'https://raw.githubusercontent.com/bmehder/projects/master/json/covid.json'
 
-  async function getData() {
-    const res = await fetch(endpoint)
-    const data = await res.json()
-    // console.log(data);
-    if (res.ok) {
-      return data
-    } else {
-      throw new Error(data)
-    }
-  }
+  let promise = fetchData(endpoint)
 
-  let promise = getData()
+  log(endpoint)
 </script>
 
 <section

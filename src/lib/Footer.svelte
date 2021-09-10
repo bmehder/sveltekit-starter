@@ -1,18 +1,18 @@
 <script>
+  import { scrollToTop } from './utils'
   import Grid from './Grid.svelte'
+
   export let background = 'rgba(82, 98, 125, 0.8)'
   export let color = 'white'
   export let height = ''
 
   const date = new Date().getFullYear()
-
-  const scrollToTop = () => {
-    document.body.scrollTop = 0 // For Safari
-    document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
-  }
 </script>
 
-<footer style="height:{height};background:{background};color:{color};">
+<footer
+  style="height:{height};background:{background};color:{color};"
+  on:click={scrollToTop}
+>
   <div>
     <slot />
   </div>

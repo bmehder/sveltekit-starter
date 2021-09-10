@@ -1,4 +1,5 @@
 <script>
+  import '../app.css'
   import Head from '$lib/Head.svelte'
   import Header from '$lib/Header.svelte'
   import Footer from '$lib/Footer.svelte'
