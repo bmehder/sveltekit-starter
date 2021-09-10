@@ -1,6 +1,7 @@
 <script>
   import Accordion from '$lib/Accordion/Accordion.svelte'
   import Audio from '$lib/Audio.svelte'
+  import Countdown from '$lib/Countdown.svelte'
   import Dragable from '$lib/Dragable.svelte'
   import Fetcher from '$lib/Fetcher.svelte'
   // import Gallery from '$lib/Gallery/Gallery.svelte'
@@ -49,6 +50,16 @@
 
 <Section minHeight="100vh" padding="4rem 2rem" title="Bounce Down Nav">
   <BounceNav />
+</Section>
+
+<Section
+  minHeight="100vh"
+  padding="4rem 2rem"
+  background="black"
+  title="Countdown"
+  titleColor="white"
+>
+  <Countdown end="April 1, 2022 5:00:00 GMT" />
 </Section>
 
 <Section

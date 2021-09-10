@@ -27,7 +27,7 @@ export const skillsData = [
   },
   {
     skill: 'Svelte',
-    percent: 90,
+    percent: 95,
     color: '#FB8500',
     delay: 1500,
     duration: 2000,
@@ -35,7 +35,7 @@ export const skillsData = [
   },
   {
     skill: 'SvelteKit',
-    percent: 75,
+    percent: 85,
     color: '#FFB703',
     delay: 1600,
     duration: 2000,
@@ -50,9 +50,17 @@ export const skillsData = [
     easing: bounceOut,
   },
   {
+    skill: 'GraphQL',
+    percent: 32,
+    color: '#219EBC',
+    delay: 2100,
+    duration: 2000,
+    easing: bounceOut,
+  },
+  {
     skill: 'GitHub',
     percent: 50,
-    color: '#219EBC',
+    color: '#023047',
     delay: 1900,
     duration: 2000,
     easing: bounceOut,
@@ -60,7 +68,7 @@ export const skillsData = [
   {
     skill: 'Netlify',
     percent: 80,
-    color: '#023047',
+    color: '#FB8500',
     delay: 2900,
     duration: 2000,
     easing: bounceOut,
