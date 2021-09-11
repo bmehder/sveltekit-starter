@@ -135,6 +135,7 @@
 </Section>
 
 <Section
+  height="100vh"
   padding="4rem 0"
   background="url('https://source.unsplash.com/random/') no-repeat center center/cover"
   title="Parallax"
