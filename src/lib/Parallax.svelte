@@ -1,9 +1,10 @@
 <script>
   import { onMount } from 'svelte'
 
-  export let speed = 0
+  export let speed = 0.2
 
   let parallaxElement
+
   onMount(() => {
     const parallax = element => {
       let y = window.innerHeight - element.getBoundingClientRect().top
