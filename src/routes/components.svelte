@@ -15,6 +15,7 @@
   import Notice from '$lib/Notice.svelte'
   import Slider from '$lib/Slider/Slider.svelte'
   import Skills from '$lib/Skills/Skills.svelte'
+  import Parallax from '$lib/Parallax.svelte'
   import Popup from '$lib/Popup.svelte'
   import Tabs from '$lib/Tabs/Tabs.svelte'
   import Timeline from '$lib/Timeline/App.svelte'
@@ -124,7 +125,7 @@
   <Neumorphism />
 </Section>
 
-<Section minHeight="100vh" padding="4rem 2rem" title="Notice">
+<Section minHeight="50vh" padding="4rem 2rem" title="Notice">
   <Notice padding="2em"
     ><span style="font-size: 1.5em;line-height: 1.5em;"
       >Click the "x", and I will disapear. I am have lots of props (padding,
@@ -133,7 +134,27 @@
   >
 </Section>
 
-<Section padding="4rem 2rem" background="black" title="Popup">
+<Section
+  padding="4rem 0"
+  background="url('https://source.unsplash.com/random/') no-repeat center center/cover"
+  title="Parallax"
+  titleColor="white"
+>
+  <Parallax speed="0.1"
+    ><img
+      style="width:100%;box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5)"
+      src="https://via.placeholder.com/800x300"
+      alt="1"
+    />
+  </Parallax>
+</Section>
+
+<Section
+  padding="4rem 2rem"
+  background="black"
+  title="Popup"
+  titleColor="white"
+>
   <Popup />
 </Section>
 

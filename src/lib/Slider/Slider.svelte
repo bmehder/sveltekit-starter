@@ -53,12 +53,7 @@
   <Controls direction="right" on:click={goForward} />
 </aside>
 
-<Footer
-  {isShowNumber}
-  {testimonialIndex}
-  {isPaused}
-  length={TESTIMONIALS.length}
-/>
+<Footer {isShowNumber} {testimonialIndex} length={TESTIMONIALS.length} />
 
 <style>
   aside {

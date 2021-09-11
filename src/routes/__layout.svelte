@@ -9,6 +9,6 @@
 
 <Header background="darkorange" />
 <slot />
-<Footer background="#111" color="white" padding="2rem 0">
+<Footer background="#111" color="white">
   <p>© 2021 Acme Company. All rights reserved.</p>
 </Footer>

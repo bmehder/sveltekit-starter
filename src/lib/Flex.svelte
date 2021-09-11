@@ -2,7 +2,7 @@
   export let direction = 'row'
   export let justify = 'left'
   export let align = 'baseline'
-  export let gap
+  export let gap = ''
 </script>
 
 <div

@@ -7,8 +7,6 @@
     'https://raw.githubusercontent.com/bmehder/projects/master/json/covid.json'
 
   let promise = fetchData(endpoint)
-
-  log(endpoint)
 </script>
 
 <section
