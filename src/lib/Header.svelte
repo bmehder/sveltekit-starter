@@ -82,7 +82,7 @@
   .uppercase {
     text-transform: uppercase;
   }
-  ul.mobile {
+  /* ul.mobile {
     width: 100%;
     flex-direction: column;
     margin: 0;
@@ -104,9 +104,8 @@
   }
   .hamburger {
     font-size: 3em;
-    /* padding-right: 0.5em; */
-  }
-  .hamburger,
+  } */
+  /* .hamburger, */
   nav.mobile {
     display: none;
   }
@@ -120,8 +119,8 @@
     nav.mobile {
       display: block;
     }
-    .hamburger {
+    /* .hamburger {
       display: block;
-    }
+    } */
   }
 </style>
