@@ -2,7 +2,6 @@
   import { tweened } from 'svelte/motion'
   import { cubicIn, cubicOut } from 'svelte/easing'
   import Modal from './Modal.svelte'
-  // import Form from './Form.svelte'
 
   let modal = false
 
@@ -47,8 +46,6 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('https://source.unsplash.com/random/800x800/?3') no-repeat
-      center/cover;
   }
   h1 {
     color: white;
@@ -65,8 +62,5 @@
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-  }
-  :global(body) {
-    padding: 0;
   }
 </style>

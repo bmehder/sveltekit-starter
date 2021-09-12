@@ -26,7 +26,7 @@
     padding: 2rem;
     width: 50%;
     max-width: 300px;
-    /* height: 200px; */
+    min-height: 200px;
     background: white;
     color: black;
     z-index: 100;
