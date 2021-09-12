@@ -54,7 +54,7 @@
     align-items: center;
     max-width: 1020px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 1em;
   }
   nav ul {
     display: flex;
