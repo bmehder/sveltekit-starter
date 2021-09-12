@@ -25,8 +25,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* min-height: 100vh; */
-    /* background: linear-gradient(45deg, darkorange, #fffde7); */
   }
   article {
     display: flex;

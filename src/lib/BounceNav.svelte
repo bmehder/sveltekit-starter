@@ -20,11 +20,12 @@
       in:slide={{ delay: 100, duration: 1000, easing: bounceOut }}
       out:slide={{ duration: 500 }}
     >
-      <a on:click={toggleNav} href="/"
-        ><img class="logo" src="/logo.svg" alt="Fischer Imaging Logo" /></a
-      >
-      <span on:click={toggleNav}>&times;</span>
-
+      <div>
+        <a on:click|self={toggleNav} href="/"
+          ><img class="logo" src="/logo.svg" alt="Fischer Imaging Logo" /></a
+        >
+        <span on:click|self={toggleNav}>&times;</span>
+      </div>
       <div>
         <a on:click={toggleNav} href="/">Home</a>
         <a on:click={toggleNav} href="/about">About Us</a>
@@ -34,11 +35,11 @@
       </div>
     </nav>
   {:else}
-    <aside on:click={toggleNav} transition:fade>
+    <aside transition:fade>
       <a href="/"
         ><img class="logo" src="/logo.svg" alt="Fischer Imaging Logo" /></a
       >
-      <span>&#9776;</span>
+      <span on:click|self={toggleNav}>&#9776;</span>
     </aside>
   {/if}
 </div>
@@ -58,33 +59,35 @@
     backdrop-filter: blur(1em);
     overflow-x: hidden;
     z-index: 9999;
+    display: flex;
+    flex-direction: column;
   }
-  div a {
+  nav div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 3em;
+  }
+  nav div a {
     line-height: 1.5em;
   }
   div div {
     width: 100%;
     position: relative;
-    /* top: 25%; */
-    margin-top: 30px;
     text-align: center;
   }
   a {
     display: block;
-    /* padding: 0.5rem; */
     font-size: 2em;
     font-weight: bold;
     color: white;
     text-decoration: none;
-    text-shadow: 1px 1px 1em rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 1em rgba(0, 0, 0, 0.5);
   }
   a:hover {
-    color: gold;
+    color: darkorange;
   }
   div nav span {
-    position: absolute;
-    top: 0.25em;
-    right: 0.25em;
     font-size: 4em;
     color: white;
     cursor: pointer;
@@ -93,15 +96,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0.5em;
-    /* background: #222; */
+    padding: 1em;
     color: white;
-    /* text-align: right; */
     border: none;
     font-size: 2em;
     cursor: pointer;
   }
+  aside a {
+    display: grid;
+    place-items: center;
+  }
   img {
-    padding-top: 2rem;
+    vertical-align: middle;
   }
 </style>

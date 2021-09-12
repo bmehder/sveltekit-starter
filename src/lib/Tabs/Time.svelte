@@ -6,6 +6,7 @@
 
 <style>
   main {
+    max-width: 600px;
     min-height: 200px;
     padding: 2rem;
     background: white;

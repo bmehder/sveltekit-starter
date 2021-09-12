@@ -25,14 +25,13 @@
       <li><a href="/contact">Contact Us</a></li>
     </ul>
   </nav>
-  <nav class="mobile">
+  <span class="mobile">
     <BounceNav />
-  </nav>
+  </span>
 </header>
 
 <style>
   header {
-    /* position: fixed; */
     width: 100%;
     padding: 3em 0;
     background: darkorange;
@@ -82,31 +81,7 @@
   .uppercase {
     text-transform: uppercase;
   }
-  /* ul.mobile {
-    width: 100%;
-    flex-direction: column;
-    margin: 0;
-    text-align: center;
-  }
-  nav div {
-    display: flex;
-    justify-content: space-between;
-  }
-  .logo-mobile {
-    display: block;
-    width: 120px;
-  }
-  ul.mobile li {
-    padding: 1em 0;
-  }
-  .bun {
-    align-items: center;
-  }
-  .hamburger {
-    font-size: 3em;
-  } */
-  /* .hamburger, */
-  nav.mobile {
+  .mobile {
     display: none;
   }
   @media screen and (max-width: 900px) {
@@ -116,11 +91,8 @@
     nav.main {
       display: none;
     }
-    nav.mobile {
+    .mobile {
       display: block;
     }
-    /* .hamburger {
-      display: block;
-    } */
   }
 </style>

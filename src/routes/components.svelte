@@ -4,7 +4,6 @@
   import Countdown from '$lib/Countdown.svelte'
   import Dragable from '$lib/Dragable.svelte'
   import Fetcher from '$lib/Fetcher.svelte'
-  // import Gallery from '$lib/Gallery/Gallery.svelte'
   import Gooey from '$lib/Gooey.svelte'
   import Hero from '$lib/Hero.svelte'
   import Hoverton from '$lib/Hoverton.svelte'
@@ -41,22 +40,13 @@
 
 <Section
   minHeight="100vh"
-  padding="4rem 2rem"
+  padding="4rem 0"
   title="Audio Player"
   background="black"
   titleColor="white"
 >
   <Audio />
 </Section>
-
-<!-- <Section
-  minHeight="100vh"
-  padding="4rem 2rem"
-  background="black"
-  title="Bounce Down Nav"
->
-  <BounceNav />
-</Section> -->
 
 <Section minHeight="100vh" padding="4rem 2rem" title="Countdown">
   <Countdown end="April 1, 2022 5:00:00 GMT" />
@@ -80,12 +70,8 @@
   </Dragable>
 </Section>
 
-<Section padding="4rem 0" title="Async Data Fetcher">
+<!-- <Section padding="4rem 0" title="Async Data Fetcher">
   <Fetcher />
-</Section>
-
-<!-- <Section padding="4rem 2rem" title="Gallery">
-  <Gallery />
 </Section> -->
 
 <Section
@@ -124,7 +110,7 @@
   <Neumorphism />
 </Section>
 
-<Section minHeight="50vh" padding="4rem 2rem" title="Notice">
+<Section minHeight="50vh" padding="4rem 0" title="Notice">
   <Notice padding="2em"
     ><span style="font-size: 1.5em;line-height: 1.5em;"
       >Click the "x", and I will disapear. I am have lots of props (padding,
@@ -149,12 +135,7 @@
   </Parallax>
 </Section>
 
-<Section
-  padding="4rem 2rem"
-  background="black"
-  title="Popup"
-  titleColor="white"
->
+<Section padding="4rem 0" background="black" title="Popup" titleColor="white">
   <Popup />
 </Section>
 
@@ -174,13 +155,8 @@
   </div>
 </Section>
 
-<Section
-  minHeight="100vh"
-  background="#f1f1f1"
-  padding="4rem 2rem"
-  title="Tabs"
->
-  <div style="width: 600px;margin: auto;">
+<Section minHeight="100vh" background="#f1f1f1" padding="4rem 0" title="Tabs">
+  <div style="max-width: 600px; margin:auto;">
     <Tabs />
   </div>
 </Section>
@@ -194,7 +170,7 @@
   <Timeline />
 </Section>
 
-<Section padding="4rem 0" title="Typewriter">
+<Section padding="4rem 0 0" title="Typewriter">
   <Typewriter />
 </Section>
 
@@ -207,11 +183,3 @@
 >
   <Video />
 </Section>
-
-<style>
-  h3 {
-    color: white;
-    text-align: center;
-    font-style: italic;
-  }
-</style>

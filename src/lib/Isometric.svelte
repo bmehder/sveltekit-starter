@@ -31,8 +31,7 @@
     align-items: center;
     min-height: 50vh;
     background: #f1f1f1;
-    /* overflow: hidden; */
-    /* padding-left: 250px; */
+    overflow-x: hidden;
   }
 
   #text {

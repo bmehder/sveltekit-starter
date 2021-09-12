@@ -36,7 +36,7 @@
   main {
     max-width: 960px;
     margin: auto;
-    padding: 2rem;
+    /* padding: 2rem; */
     /* background: dodgerblue; */
   }
 

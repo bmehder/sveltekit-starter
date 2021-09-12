@@ -58,15 +58,11 @@
 
 <style>
   section {
-    overflow-x: auto;
     padding-top: 0;
   }
-  /* h3 {
-    color: white;
-  } */
   article {
     display: flex;
-    min-width: 600px;
+    padding: 0 2em;
   }
   article:nth-child(odd) {
     background-color: #fff;
@@ -75,9 +71,11 @@
     background-color: #f1f1f1;
   }
   article div {
-    width: 25%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25%;
     line-height: 2em;
-    padding: 1em 3em;
+    padding: 1em 0;
   }
   .heading {
     background-color: darkorange !important;
