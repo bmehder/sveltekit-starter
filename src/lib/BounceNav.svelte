@@ -102,6 +102,6 @@
     cursor: pointer;
   }
   img {
-    padding-top: 20px;
+    padding-top: 2rem;
   }
 </style>
