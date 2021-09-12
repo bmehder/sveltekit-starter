@@ -68,7 +68,7 @@
   }
   a {
     display: block;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     font-size: 2em;
     font-weight: bold;
     color: white;
