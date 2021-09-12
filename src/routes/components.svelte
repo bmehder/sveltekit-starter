@@ -141,10 +141,10 @@
   title="Parallax"
   titleColor="white"
 >
-  <Parallax speed="0.1"
-    ><img
+  <Parallax>
+    <img
       style="width:100%;box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5)"
-      src="https://via.placeholder.com/800x300"
+      src="https://via.placeholder.com/800x400"
       alt="1"
     />
   </Parallax>
