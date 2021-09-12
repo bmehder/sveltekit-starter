@@ -41,4 +41,9 @@
     font-weight: bold;
     border-radius: 4px;
   }
+  @media screen and (max-width: 400px) {
+    form {
+      width: 100%;
+    }
+  }
 </style>
