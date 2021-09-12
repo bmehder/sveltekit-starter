@@ -144,7 +144,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-allign: center;
+    text-align: center;
     background-size: cover;
     background-position: center;
     background-image: url(https://images.unsplash.com/photo-1618935262538-2c8f334afca6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80);

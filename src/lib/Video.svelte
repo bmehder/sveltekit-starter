@@ -1,10 +1,12 @@
 <script>
   import { onMount } from 'svelte'
   import { fly } from 'svelte/transition'
+
   export let file =
     'https://player.vimeo.com/external/305211631.sd.mp4?s=3d46306a3d07d1c56eb64f1fcb1ba96232e34d90&profile_id=164&oauth2_token_id=57447761'
   export let loop = false
   export let poster = ''
+
   onMount(() => {
     // Grab the DOM Objects
     const video = document.getElementById('video')

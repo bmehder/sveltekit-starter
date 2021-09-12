@@ -1,6 +1,5 @@
 <script>
-  import { slide } from 'svelte/transition'
-  import Flex from './Flex.svelte'
+  import BounceNav from '$lib/BounceNav.svelte'
 
   export let sticky = false
   export let uppercase = false
@@ -27,28 +26,7 @@
     </ul>
   </nav>
   <nav class="mobile">
-    <Flex justify="space-between" align="center">
-      <a href="/"><img class="logo-mobile" src="/logo.svg" alt="Acme Logo" /></a
-      >
-      <div class="bun">
-        <div on:click={showMobile} class="hamburger">&#9776;</div>
-      </div>
-    </Flex>
-    {#if mobile}
-      <ul class="mobile" class:uppercase transition:slide>
-        <li>
-          <a on:click={showMobile} href="/">Home</a>
-        </li>
-        <li><a on:click={showMobile} href="/about">About Us</a></li>
-        <li>
-          <a on:click={showMobile} href="/blog">Blog</a>
-        </li>
-        <li><a on:click={showMobile} href="/components">Components</a></li>
-        <li>
-          <a on:click={showMobile} href="/contact">Contact Us</a>
-        </li>
-      </ul>
-    {/if}
+    <BounceNav />
   </nav>
 </header>
 
@@ -76,7 +54,7 @@
     align-items: center;
     max-width: 1020px;
     margin: 0 auto;
-    padding: 0 1em;
+    padding: 0;
   }
   nav ul {
     display: flex;
@@ -134,7 +112,7 @@
   }
   @media screen and (max-width: 900px) {
     header {
-      padding: 1em;
+      padding: 0;
     }
     nav.main {
       display: none;

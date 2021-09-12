@@ -1,15 +1,14 @@
 <script>
-  import { onMount } from 'svelte'
   import { fly } from 'svelte/transition'
 
   export let image = 'https://picsum.photos/1000'
 
   let onLoad = false
 
-  onMount(() => (onLoad = true))
+  const doLoaded = () => (onLoad = true)
 </script>
 
-<section>
+<section use:doLoaded>
   {#if onLoad}
     <img
       class="hero"

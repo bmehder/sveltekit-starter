@@ -3,6 +3,7 @@
   import { bounceOut } from 'svelte/easing'
 
   let isNavOpen
+
   const toggleNav = () => (isNavOpen = !isNavOpen)
 </script>
 
@@ -14,16 +15,26 @@
       in:slide={{ delay: 100, duration: 1000, easing: bounceOut }}
       out:slide={{ duration: 500 }}
     >
+      <a on:click={toggleNav} href="/"
+        ><img class="logo" src="/logo.svg" alt="Fischer Imaging Logo" /></a
+      >
       <span on:click={toggleNav}>&times;</span>
+
       <div>
-        <a href=".">About</a>
-        <a href=".">Services</a>
-        <a href=".">Clients</a>
-        <a href=".">Contact</a>
+        <a on:click={toggleNav} href="/">Home</a>
+        <a on:click={toggleNav} href="/about">About Us</a>
+        <a on:click={toggleNav} href="/blog">Blog</a>
+        <a on:click={toggleNav} href="/components">Components</a>
+        <a on:click={toggleNav} href="/contact">Contact Us</a>
       </div>
     </nav>
   {:else}
-    <aside on:click={toggleNav} transition:fade>&#9776;</aside>
+    <aside on:click={toggleNav} transition:fade>
+      <a href="/"
+        ><img class="logo" src="/logo.svg" alt="Fischer Imaging Logo" /></a
+      >
+      <span>&#9776;</span>
+    </aside>
   {/if}
 </div>
 
@@ -46,14 +57,14 @@
   div div {
     width: 100%;
     position: relative;
-    top: 25%;
+    /* top: 25%; */
     margin-top: 30px;
     text-align: center;
   }
   a {
     display: block;
     padding: 0.5rem;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -62,21 +73,27 @@
   a:hover {
     color: gold;
   }
-  span {
+  div nav span {
     position: absolute;
-    top: 0;
+    top: 0.25em;
     right: 0.25em;
     font-size: 4em;
     color: white;
     cursor: pointer;
   }
   aside {
-    padding: 0.5em 0.75em;
-    background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5em;
+    /* background: #222; */
     color: white;
-    text-align: right;
+    /* text-align: right; */
     border: none;
     font-size: 2em;
     cursor: pointer;
+  }
+  img {
+    padding-top: 20px;
   }
 </style>
