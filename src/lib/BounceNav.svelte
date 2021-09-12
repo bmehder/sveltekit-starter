@@ -59,6 +59,9 @@
     overflow-x: hidden;
     z-index: 9999;
   }
+  div a {
+    line-height: 1.5em;
+  }
   div div {
     width: 100%;
     position: relative;
