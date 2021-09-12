@@ -3,19 +3,16 @@
   import Audio from '$lib/Audio.svelte'
   import Countdown from '$lib/Countdown.svelte'
   import Dragable from '$lib/Dragable.svelte'
-  import Fetcher from '$lib/Fetcher.svelte'
   import Gooey from '$lib/Gooey.svelte'
   import Hero from '$lib/Hero.svelte'
   import Hoverton from '$lib/Hoverton.svelte'
   import Isometric from '$lib/Isometric.svelte'
-  import BounceNav from '$lib/BounceNav.svelte'
   import Modal from '$lib/Modal/App.svelte'
   import Neumorphism from '$lib/Neumorphism.svelte'
   import Notice from '$lib/Notice.svelte'
   import Slider from '$lib/Slider/Slider.svelte'
   import Skills from '$lib/Skills/Skills.svelte'
   import Parallax from '$lib/Parallax.svelte'
-  import Popup from '$lib/Popup.svelte'
   import Tabs from '$lib/Tabs/Tabs.svelte'
   import Timeline from '$lib/Timeline/App.svelte'
   import Typewriter from '$lib/Typewriter.svelte'
@@ -24,7 +21,7 @@
 </script>
 
 <Section
-  padding="4rem 2rem"
+  padding="4rem 0"
   background="black"
   title="Svelte Components"
   titleColor="white"
@@ -32,7 +29,7 @@
   <h3>More coming soon...</h3>
 </Section>
 
-<Section minHeight="100vh" padding="4rem 2rem" title="Accordion">
+<Section minHeight="100vh" padding="4rem 0" title="Accordion">
   <div id="#Accordion">
     <Accordion />
   </div>
@@ -53,7 +50,7 @@
 </Section>
 
 <Section
-  padding="4rem 2rem"
+  padding="4rem 0"
   minHeight="100vh"
   background="url('https://source.unsplash.com/random/') no-repeat center center/cover"
   title="Dragable"
@@ -69,10 +66,6 @@
     <h3>Dragable 3</h3>
   </Dragable>
 </Section>
-
-<!-- <Section padding="4rem 0" title="Async Data Fetcher">
-  <Fetcher />
-</Section> -->
 
 <Section
   minHeight="100vh"
@@ -135,17 +128,13 @@
   </Parallax>
 </Section>
 
-<Section padding="4rem 0" background="black" title="Popup" titleColor="white">
-  <Popup />
-</Section>
-
-<Section minHeight="100vh" padding="4rem 2rem" title="Skills">
+<Section minHeight="100vh" padding="4rem 0" title="Skills">
   <Skills />
 </Section>
 
 <Section
   minHeight="100vh"
-  padding="4rem 2rem"
+  padding="4rem 0"
   background="black"
   title="Slider"
   titleColor="white"
@@ -183,3 +172,10 @@
 >
   <Video />
 </Section>
+
+<style>
+  h3 {
+    color: white;
+    text-align: center;
+  }
+</style>
