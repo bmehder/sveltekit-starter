@@ -49,17 +49,16 @@
   <Audio />
 </Section>
 
-<Section minHeight="100vh" padding="4rem 2rem" title="Bounce Down Nav">
-  <BounceNav />
-</Section>
-
-<Section
+<!-- <Section
   minHeight="100vh"
   padding="4rem 2rem"
   background="black"
-  title="Countdown"
-  titleColor="white"
+  title="Bounce Down Nav"
 >
+  <BounceNav />
+</Section> -->
+
+<Section minHeight="100vh" padding="4rem 2rem" title="Countdown">
   <Countdown end="April 1, 2022 5:00:00 GMT" />
 </Section>
 
