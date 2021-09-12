@@ -53,8 +53,8 @@
     position: absolute;
     width: 6px;
     background-color: white;
-    top: -40px;
-    bottom: -40px;
+    top: -12px;
+    bottom: -72px;
     left: 50%;
     transform: translateX(-3px);
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 1);

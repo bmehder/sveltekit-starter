@@ -1,6 +1,6 @@
 <script>
-  import { createEventDispatcher } from "svelte";
-  const dispatch = createEventDispatcher();
+  import { createEventDispatcher } from 'svelte'
+  const dispatch = createEventDispatcher()
 </script>
 
 <header>
@@ -9,16 +9,18 @@
       <li>
         <button
           on:click={() => {
-            dispatch('toggle', 'Presidents');
-          }}>
+            dispatch('toggle', 'Presidents')
+          }}
+        >
           Presidents
         </button>
       </li>
       <li>
         <button
           on:click={() => {
-            dispatch('toggle', 'Tennis');
-          }}>
+            dispatch('toggle', 'Tennis')
+          }}
+        >
           Tennis
         </button>
       </li>

@@ -14,7 +14,6 @@
   import Parallax from '$lib/Parallax.svelte'
   import Tabs from '$lib/Tabs/Tabs.svelte'
   import Timeline from '$lib/Timeline/App.svelte'
-  import Typewriter from '$lib/Typewriter.svelte'
   import Video from '$lib/Video.svelte'
   import Section from '$lib/Section.svelte'
 </script>
@@ -43,7 +42,7 @@
   <Audio />
 </Section>
 
-<Section padding="4rem 0 6rem" title="Countdown">
+<Section padding="4rem 0 8rem" title="Countdown">
   <Countdown end="April 1, 2022 5:00:00 GMT" />
 </Section>
 
@@ -56,7 +55,12 @@
   <Gooey />
 </Section>
 
-<Section padding="4rem 0 6rem" background="#f1f1f1" title="Hero">
+<Section
+  padding="4rem 0 8rem"
+  background="#02075d"
+  titleColor="white"
+  title="Hero"
+>
   <Hero />
 </Section>
 
@@ -64,12 +68,7 @@
   <Hoverton />
 </Section>
 
-<Section
-  padding="4rem 0 8rem"
-  title="Isometric Text"
-  background="black"
-  titleColor="white"
->
+<Section padding="4rem 0 8rem" title="Isometric Text" background="#f1f1f1">
   <Isometric />
 </Section>
 
@@ -80,11 +79,16 @@
   <Modal />
 </Section>
 
-<Section padding="4rem 0" background="#e8eaf6" title="Neumorphism">
+<Section
+  minHeight="100vh"
+  padding="4rem 0"
+  background="#e8eaf6"
+  title="Neumorphism"
+>
   <Neumorphism />
 </Section>
 
-<Section minHeight="50vh" padding="4rem 0" title="Notice">
+<Section padding="4rem 0 6rem" title="Notice">
   <Notice padding="2em" fontSize="2em"
     ><span style="font-size: 1.5em;line-height: 1.5em;"
       >Click the "x", and I will disapear. I am have lots of props (padding,
@@ -114,7 +118,7 @@
 </Section>
 
 <Section
-  padding="4rem 0 6rem"
+  padding="4rem 0 8rem"
   background="black"
   title="Slider"
   titleColor="white"
@@ -124,14 +128,14 @@
   </div>
 </Section>
 
-<Section background="#f1f1f1" padding="4rem 0 6rem" title="Tabs">
+<Section background="#f1f1f1" padding="4rem 0 8rem" title="Tabs">
   <div style="max-width: 600px; margin:auto;">
     <Tabs />
   </div>
 </Section>
 
 <Section
-  padding="4rem 0 6rem"
+  padding="4rem 0 2rem"
   title="Timeline"
   background="black"
   titleColor="white"
@@ -139,17 +143,7 @@
   <Timeline />
 </Section>
 
-<Section padding="4rem 0 0" title="Typewriter">
-  <Typewriter />
-</Section>
-
-<Section
-  minHeight="100vh"
-  padding="4rem 0 6rem"
-  title="Video Player"
-  background="black"
-  titleColor="white"
->
+<Section padding="4rem 0 8rem" title="Video Player">
   <Video />
 </Section>
 
