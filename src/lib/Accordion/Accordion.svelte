@@ -31,29 +31,15 @@
   {/each}
 </main>
 
-<footer>
-  <p>
-    Information and images from
-    <a href="https://en.wikipedia.org/wiki/Main_Page">wikipedia</a>
-  </p>
-</footer>
-
 <style>
   header {
     width: 100%;
     text-align: center;
     color: #333;
   }
-
   main {
     max-width: 960px;
     margin: auto;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  }
-
-  footer {
-    width: 100%;
-    text-align: center;
-    font-size: 0.8rem;
   }
 </style>

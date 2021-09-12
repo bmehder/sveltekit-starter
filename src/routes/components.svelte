@@ -89,7 +89,7 @@
 </Section>
 
 <Section padding="4rem 0 6rem" title="Notice">
-  <Notice padding="2em" fontSize="2em"
+  <Notice padding="2em"
     ><span style="font-size: 1.5em;line-height: 1.5em;"
       >Click the "x", and I will disapear. I am have lots of props (padding,
       background, fontSize, color, borderRadius, boxShadow)</span
