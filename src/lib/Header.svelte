@@ -23,6 +23,8 @@
       <li><a href="/blog">Blog</a></li>
       <li><a href="/components">Components</a></li>
       <li><a href="/contact">Contact Us</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/profile">Profile</a></li>
     </ul>
   </nav>
   <span class="mobile">
@@ -51,7 +53,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1020px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 1em;
   }
