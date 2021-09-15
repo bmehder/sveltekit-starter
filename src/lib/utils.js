@@ -2,7 +2,7 @@ import { browser } from '$app/env'
 
 function browserGet(key) {
   if (browser) {
-    const item = localStorage.getItem(key)
+    const item = sessionStorage.getItem(key)
     if (item) {
       return JSON.parse(item)
     }
@@ -12,7 +12,7 @@ function browserGet(key) {
 
 export function browserSet(key, value) {
   if (browser) {
-    localStorage.setItem(key, value)
+    sessionStorage.setItem(key, value)
   }
   return null
 }

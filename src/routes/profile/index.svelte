@@ -6,7 +6,7 @@
   onMount(async () => {
     const res = await fetch('http://localhost:1337/users/me', {
       headers: {
-        Authorization: 'Bearer ' + localStorage.getItem('jwt'),
+        Authorization: 'Bearer ' + sessionStorage.getItem('jwt'),
       },
     })
     const json = await res.json()
