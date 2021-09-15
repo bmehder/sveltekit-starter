@@ -28,7 +28,7 @@
       </div>
       <div>
         <a on:click={toggleNav} href="/">Home</a>
-        <a on:click={toggleNav} href="/about">About Us</a>
+        <a on:click={toggleNav} href="/about">About</a>
         <a on:click={toggleNav} href="/blog">Blog</a>
         <a on:click={toggleNav} href="/components">Components</a>
         <!-- <a on:click={toggleNav} href="/contact">Contact Us</a> -->

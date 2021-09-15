@@ -1,5 +1,6 @@
 <script>
   import BounceNav from '$lib/BounceNav.svelte'
+  import SubMenu from '$lib/SubMenu.svelte'
 
   export let sticky = false
   export let uppercase = false
@@ -7,20 +8,36 @@
   export let color = '#001515'
 
   let mobile = false
-  const showMobile = () => {
-    mobile = !mobile
-  }
+  const showMobile = () => (mobile = !mobile)
 </script>
 
 <header class:sticky style="background:{background};color:{color};">
   <nav class="main">
-    <a href="/"
-      ><img class="logo" src="/logo.svg" alt="Fischer Imaging Logo" /></a
-    >
+    <a href="/"><img class="logo" src="/logo.svg" alt="Acme Logo" /></a>
     <ul class:uppercase>
       <li><a href="/">Home</a></li>
-      <li><a href="/about">About Us</a></li>
-      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+      <li>
+        <a href="/blog">Blog</a>
+        <div>
+          <SubMenu
+            items={[
+              {
+                linkText: 'Authors',
+                href: '/authors',
+              },
+              // {
+              //   linkText: 'Tags',
+              //   href: '/authors',
+              // },
+              // {
+              //   linkText: 'Categories',
+              //   href: '/authors',
+              // },
+            ]}
+          />
+        </div>
+      </li>
       <li><a href="/components">Components</a></li>
       <!-- <li><a href="/contact">Contact Us</a></li> -->
       <li><a href="/login">Login</a></li>
@@ -53,7 +70,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1080px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 1em;
   }
@@ -62,6 +79,7 @@
     justify-content: space-between;
   }
   nav ul li {
+    position: relative;
     list-style-type: none;
     padding: 0 1rem;
     font-weight: 600;
@@ -76,9 +94,15 @@
     text-decoration: none;
   }
   nav ul li a:hover {
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
     color: #02075d;
     border-bottom: 4px solid #02075d;
+  }
+  div {
+    display: none;
+  }
+  nav ul li:hover > div {
+    display: block;
   }
   .uppercase {
     text-transform: uppercase;
