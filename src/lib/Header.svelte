@@ -22,7 +22,7 @@
       <li><a href="/about">About Us</a></li>
       <li><a href="/blog">Blog</a></li>
       <li><a href="/components">Components</a></li>
-      <li><a href="/contact">Contact Us</a></li>
+      <!-- <li><a href="/contact">Contact Us</a></li> -->
       <li><a href="/login">Login</a></li>
       <li><a href="/profile">Profile</a></li>
     </ul>
@@ -53,7 +53,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1140px;
+    max-width: 1080px;
     margin: 0 auto;
     padding: 0 1em;
   }

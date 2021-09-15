@@ -1,6 +1,6 @@
 <script>
   import Section from '$lib/Section.svelte'
-  import { post, browserSet } from '$lib/req_util'
+  import { post, browserSet } from '$lib/utils.js'
 
   let username
   let password
