@@ -1,9 +1,4 @@
-<script>
-  import { fly } from "svelte/transition";
-</script>
-
-<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
-  <!-- <h3>Hoverton</h3> -->
+<section>
   <button class="button" on:click|preventDefault>
     Continue
     <span />
@@ -48,7 +43,7 @@
   }
 
   .button span::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 8%;
     height: 500%;

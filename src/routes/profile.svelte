@@ -20,7 +20,7 @@
   })
 </script>
 
-<Section>
+<Section padding="4rem 0">
   <h1>Welcome to your profile</h1>
 
   {#if isReady}

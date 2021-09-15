@@ -72,10 +72,7 @@
   <Isometric />
 </Section>
 
-<Section
-  background="url('https://source.unsplash.com/random/800x800/?3') no-repeat
-      center/cover;"
->
+<Section>
   <Modal />
 </Section>
 
