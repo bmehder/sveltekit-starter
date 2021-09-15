@@ -1,6 +1,5 @@
 <script>
   import { scrollToTop } from './utils'
-  import Grid from './Grid.svelte'
 
   export let background = 'rgba(82, 98, 125, 0.8)'
   export let color = 'white'
@@ -9,25 +8,41 @@
   const date = new Date().getFullYear()
 </script>
 
-<footer
-  style="height:{height};background:{background};color:{color};"
-  on:click={scrollToTop}
->
+<footer style="height:{height};background:{background};color:{color};">
   <div>
     <slot />
+    <p on:click={scrollToTop}>
+      Back to Top <i class="fa fa-arrow-up" aria-hidden="true" />
+    </p>
   </div>
 </footer>
 
 <style>
-  footer {
-    width: 100%;
-    margin: auto;
-    /* padding: 1.5rem; */
-    color: white;
-    text-align: center;
-  }
   div {
-    max-width: 960px;
-    margin: 2em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1080px;
+    margin: auto;
+    padding: 2em;
+  }
+  i {
+    width: 25px;
+    height: 25px;
+    margin-left: 0.5em;
+    background-color: white;
+    color: black;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    animation: pulse 2s ease infinite alternate;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.25);
+    }
   }
 </style>
