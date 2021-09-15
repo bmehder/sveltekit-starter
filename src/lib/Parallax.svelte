@@ -3,14 +3,14 @@
 
   let scrollY
 
-  const doParallax = (element, scrollY) => {
+  const doParallaxAction = element => {
     let y = window.innerHeight - element.getBoundingClientRect().top
 
     element.style.transform = `translateY(${speed * (y * 1.5)}px)`
 
     return {
-      update(scrollY) {
-        doParallax(element)
+      update(newScrollY) {
+        doParallaxAction(element)
       },
     }
   }
@@ -18,6 +18,6 @@
 
 <svelte:window bind:scrollY />
 
-<div use:doParallax={scrollY}>
+<div use:doParallaxAction={scrollY}>
   <slot />
 </div>
