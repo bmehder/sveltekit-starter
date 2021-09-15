@@ -1,6 +1,6 @@
 import { browser } from '$app/env'
 
-function browserGet(key) {
+const getUserJWT = key => {
   if (browser) {
     const item = sessionStorage.getItem(key)
     if (item) {
@@ -10,54 +10,38 @@ function browserGet(key) {
   return null
 }
 
-export function browserSet(key, value) {
+export const setUserJWT = (key, value) => {
   if (browser) {
     sessionStorage.setItem(key, value)
   }
   return null
 }
 
-export async function post(fetch, url, body) {
-  let customError = false
+export const loginUser = async (url, body) => {
   try {
-    let headers = {}
-    if (!(body instanceof FormData)) {
-      headers['Content-Type'] = 'application/json'
-      body = JSON.stringify(body)
+    const headers = {
+      'Content-Type': 'application/json',
     }
-    const token = browserGet('jwt')
-    if (token) {
-      headers['Authorization'] = 'Bearer' + token
-    }
+    body = JSON.stringify(body)
+    const token = getUserJWT('jwt')
+    token && (headers['Authorization'] = 'Bearer' + token)
+
     const res = await fetch(url, {
       method: 'POST',
       body,
       headers,
     })
-    if (!res.ok) {
+
+    if (res.ok) {
       try {
-        const data = await res.json()
-        const error = data.message[0].messages[0]
-        customError = true
-        throw { id: error.id, message: error.message }
+        const json = await res.json()
+        return json
       } catch (err) {
         console.log(err)
-        throw err
       }
     }
-    try {
-      const json = await res.json()
-      return json
-    } catch (err) {
-      console.log(err)
-      throw { id: '', message: 'An unknown error has occured' }
-    }
-    return res
   } catch (err) {
     console.log(err)
-    throw customError
-      ? err
-      : { id: '', message: 'An unknown error has occured' }
   }
 }
 

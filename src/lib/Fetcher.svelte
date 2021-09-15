@@ -1,6 +1,5 @@
 <script>
-  import { fetchData, log } from './utils'
-  import { fly } from 'svelte/transition'
+  import { fetchData } from './utils'
   import Gooey from './Gooey.svelte'
 
   export let endpoint =
@@ -9,15 +8,10 @@
   let promise = fetchData(endpoint)
 </script>
 
-<section
-  id="fetcher"
-  class="carbon"
-  in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}
->
+<section id="fetcher" class="carbon">
   {#await promise}
     <Gooey />
   {:then data}
-    <!-- <h3>Async Data Fetcher</h3> -->
     <article class="heading shadow">
       <div>
         <strong>Business</strong>
@@ -32,24 +26,14 @@
         <strong>Rating</strong>
       </div>
     </article>
-    {#each data as chunck, i}
+    {#each data as { business, address, cat, rating }}
       <article>
-        <div>{chunck.business}</div>
-        <div>{chunck.address}</div>
-        <div>{chunck.cat}</div>
-        <div>{chunck.rating}%</div>
+        <div>{business}</div>
+        <div>{address}</div>
+        <div>{cat}</div>
+        <div>{rating}%</div>
       </article>
     {/each}
-    <p>
-      <small>
-        <a
-          href="https://raw.githubusercontent.com/bmehder/projects/master/json/covid.json"
-          target="_blank"
-        >
-          https://raw.githubusercontent.com/bmehder/projects/master/json/covid.json
-        </a>
-      </small>
-    </p>
   {:catch error}
     <p>Something has gone horribly wrong. :-(</p>
     <p style="color: red">{error.message}</p>

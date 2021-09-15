@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte'
+  import Section from '$lib/Section.svelte'
 
   let name
 
@@ -15,10 +16,14 @@
   })
 </script>
 
-{#if name}
-  <h2>{name}</h2>
-{/if}
+<Section>
+  <h1>Welcome to your profile</h1>
 
-{#if !name}
-  <h2>Not logged in</h2>
-{/if}
+  {#if name}
+    <h2>{name}</h2>
+  {/if}
+
+  {#if !name}
+    <h2>Not logged in</h2>
+  {/if}
+</Section>
