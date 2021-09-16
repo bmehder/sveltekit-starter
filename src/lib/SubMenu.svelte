@@ -15,11 +15,15 @@
     left: 50%;
     transform: translateX(-50%);
     padding: 1.5rem;
-    background: rgb(32, 32, 90);
+    background: #333;
     list-style: none;
     font-size: 1.1rem;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.24);
     z-index: 1000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
   }
   li {
     margin-bottom: 1rem;
@@ -28,7 +32,7 @@
     margin-bottom: 0;
   }
   a {
-    color: #ddd;
+    color: #eee;
     font-weight: normal;
     text-decoration: none;
   }

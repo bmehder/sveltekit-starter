@@ -19,24 +19,16 @@
       <li><a href="/about">About</a></li>
       <li>
         <a href="/blog">Blog</a>
-        <div>
+        <!-- <div>
           <SubMenu
             items={[
               {
                 linkText: 'Authors',
                 href: '/authors',
               },
-              // {
-              //   linkText: 'Tags',
-              //   href: '/authors',
-              // },
-              // {
-              //   linkText: 'Categories',
-              //   href: '/authors',
-              // },
             ]}
           />
-        </div>
+        </div> -->
       </li>
       <li><a href="/components">Components</a></li>
       <!-- <li><a href="/contact">Contact Us</a></li> -->

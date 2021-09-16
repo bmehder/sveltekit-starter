@@ -7,9 +7,7 @@
   let username = ''
   let password = ''
 
-  $: isNoEmptyFields = username.length < 1 || password.length < 1
-
-  $: console.log(isNoEmptyFields)
+  $: isEmptyFields = username.length < 1 || password.length < 1
 
   async function handleLogin() {
     const json = await loginUser(loginUrl, {
@@ -38,7 +36,7 @@
       bind:value={password}
       placeholder="Enter your password..."
     />
-    <button disabled={isNoEmptyFields} on:click={handleLogin}>Login</button>
+    <button disabled={isEmptyFields} on:click={handleLogin}>Login</button>
   </form>
 </Section>
 
