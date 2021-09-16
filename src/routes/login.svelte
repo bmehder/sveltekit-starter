@@ -21,7 +21,7 @@
   }
 </script>
 
-<Section padding="6rem 0" background="darkorange" title="Login">
+<Section padding="6rem 0" background="darkorange" title="Login" height="100%">
   <form on:submit|preventDefault>
     <input
       type="text"

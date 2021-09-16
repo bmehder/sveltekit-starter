@@ -42,7 +42,7 @@
         <option value="#Gooey">Gooey</option>
         <option value="#Hero">Hero</option>
         <option value="#Hoverton">Hoverton</option>
-        <option value="#Isometrix">Isometrix</option>
+        <option value="#Isometric">Isometrix</option>
         <option value="#Modal">Modal</option>
         <option value="#Neuomorphism">Neuomorphism</option>
         <option value="#Notice">Notice</option>
