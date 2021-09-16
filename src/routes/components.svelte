@@ -126,7 +126,7 @@
   background="#e8eaf6"
   title="Neumorphism"
 >
-  <div id="Neumorphism">
+  <div id="Neuomorphism">
     <Neumorphism />
   </div>
 </Section>
