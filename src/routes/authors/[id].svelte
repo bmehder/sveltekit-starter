@@ -1,20 +1,14 @@
 <script context="module">
+  import { setUserJWT } from '$lib/utils'
+
   export const load = async ({ page, fetch }) => {
     const id = page.params.id
+    const endpoint = `https://jsonplaceholder.typicode.com/users/${id}?_embed=posts`
 
-    const [resAuthor, resPosts] = await Promise.all([
-      fetch(`https://jsonplaceholder.typicode.com/users/${id}`),
-      fetch('https://jsonplaceholder.typicode.com/posts'),
-    ])
+    const res = await fetch(endpoint)
+    const author = await res.json()
 
-    const [author, allPosts] = await Promise.all([
-      resAuthor.json(),
-      resPosts.json(),
-    ])
-
-    const posts = allPosts.filter(post => {
-      return post.userId === author.id
-    })
+    const posts = author.posts
 
     return {
       props: {

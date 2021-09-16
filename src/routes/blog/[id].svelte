@@ -3,14 +3,10 @@
     const id = page.params.id
 
     const postRes = await fetch(
-      `https://jsonplaceholder.typicode.com/posts/${id}`
+      `https://jsonplaceholder.typicode.com/posts/${id}?_expand=user`
     )
     const post = await postRes.json()
-
-    const userRes = await fetch(
-      `https://jsonplaceholder.typicode.com/users/${post.userId}`
-    )
-    const user = await userRes.json()
+    const user = post.user
 
     return {
       props: {
