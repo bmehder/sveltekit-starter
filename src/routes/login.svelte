@@ -74,6 +74,7 @@
   button:disabled {
     cursor: not-allowed;
     transform: scale(0.98);
+    color: #aaa;
   }
   button:hover:not(:disabled) {
     box-shadow: 2px 2px 11px #c76d00, 2px 2px 2px #ffab00 inset;

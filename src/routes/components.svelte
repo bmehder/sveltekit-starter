@@ -16,6 +16,14 @@
   import Timeline from '$lib/Timeline/App.svelte'
   import Video from '$lib/Video.svelte'
   import Section from '$lib/Section.svelte'
+  import Flex from '$lib/Flex.svelte'
+
+  let sectionEl, value
+
+  const handleOnChange = e => {
+    sectionEl = document.querySelector(value)
+    sectionEl.scrollIntoView({ block: 'center' })
+  }
 </script>
 
 <Section
@@ -24,11 +32,33 @@
   title="Svelte Components"
   titleColor="white"
 >
-  <h3>More coming soon...</h3>
+  <Flex justify="center">
+    <aside>
+      <p>Select a component:</p>
+      <select bind:value on:change={handleOnChange}>
+        <option value="#Accordion">Accordion</option>
+        <option value="#Audio">Audio</option>
+        <option value="#Countdown">Countdown</option>
+        <option value="#Gooey">Gooey</option>
+        <option value="#Hero">Hero</option>
+        <option value="#Hoverton">Hoverton</option>
+        <option value="#Isometrix">Isometrix</option>
+        <option value="#Modal">Modal</option>
+        <option value="#Neuomorphism">Neuomorphism</option>
+        <option value="#Notice">Notice</option>
+        <option value="#Slider">Slider</option>
+        <option value="#Skills">Skills</option>
+        <option value="#Parallax">Parallax</option>
+        <option value="#Tabs">Tabs</option>
+        <option value="#Timeline">Timeline</option>
+        <option value="#Video">Video</option>
+      </select>
+    </aside>
+  </Flex>
 </Section>
 
 <Section padding="4rem 0" title="Accordion">
-  <div id="#Accordion">
+  <div id="Accordion">
     <Accordion />
   </div>
 </Section>
@@ -39,11 +69,15 @@
   background="black"
   titleColor="white"
 >
-  <Audio />
+  <div id="Audio">
+    <Audio />
+  </div>
 </Section>
 
 <Section padding="4rem 0 8rem" title="Countdown">
-  <Countdown end="April 1, 2022 5:00:00 GMT" />
+  <div id="Countdown">
+    <Countdown end="April 1, 2022 5:00:00 GMT" />
+  </div>
 </Section>
 
 <Section
@@ -52,7 +86,9 @@
   background="black"
   titleColor="white"
 >
-  <Gooey />
+  <div id="Gooey">
+    <Gooey />
+  </div>
 </Section>
 
 <Section
@@ -61,19 +97,27 @@
   titleColor="white"
   title="Hero"
 >
-  <Hero />
+  <div id="Hero">
+    <Hero />
+  </div>
 </Section>
 
 <Section padding="4rem 0 6rem" title="Hover Button">
-  <Hoverton />
+  <div id="Hoverton">
+    <Hoverton />
+  </div>
 </Section>
 
 <Section padding="4rem 0 8rem" title="Isometric Text" background="#f1f1f1">
-  <Isometric />
+  <div id="Isometric">
+    <Isometric />
+  </div>
 </Section>
 
 <Section>
-  <Modal />
+  <div id="Modal">
+    <Modal />
+  </div>
 </Section>
 
 <Section
@@ -82,16 +126,20 @@
   background="#e8eaf6"
   title="Neumorphism"
 >
-  <Neumorphism />
+  <div id="Neumorphism">
+    <Neumorphism />
+  </div>
 </Section>
 
 <Section padding="4rem 0 6rem" title="Notice">
-  <Notice padding="2em"
-    ><span style="font-size: 1.5em;line-height: 1.5em;"
-      >Click the "x", and I will disapear. I am have lots of props (padding,
-      background, fontSize, color, borderRadius, boxShadow)</span
-    ></Notice
-  >
+  <div id="Notice">
+    <Notice padding="2em"
+      ><span style="font-size: 1.5em;line-height: 1.5em;"
+        >Click the "x", and I will disapear. I am have lots of props (padding,
+        background, fontSize, color, borderRadius, boxShadow)</span
+      ></Notice
+    >
+  </div>
 </Section>
 
 <Section
@@ -101,17 +149,21 @@
   title="Parallax"
   titleColor="white"
 >
-  <Parallax>
-    <img
-      style="display:block;margin:auto;box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5)"
-      src="https://via.placeholder.com/400x200"
-      alt="1"
-    />
-  </Parallax>
+  <div id="Parallax">
+    <Parallax>
+      <img
+        style="display:block;margin:auto;box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5)"
+        src="https://via.placeholder.com/400x200"
+        alt="1"
+      />
+    </Parallax>
+  </div>
 </Section>
 
 <Section minHeight="100vh" padding="4rem 0" title="Skills">
-  <Skills />
+  <div id="Skills">
+    <Skills />
+  </div>
 </Section>
 
 <Section
@@ -121,13 +173,17 @@
   titleColor="white"
 >
   <div style="max-width: 600px;margin:auto;border-radius:8px;">
-    <Slider />
+    <div id="Slider">
+      <Slider />
+    </div>
   </div>
 </Section>
 
 <Section background="#f1f1f1" padding="4rem 0 8rem" title="Tabs">
-  <div style="max-width: 600px; margin:auto;">
-    <Tabs />
+  <div id="Tabs">
+    <div style="max-width: 600px; margin:auto;">
+      <Tabs />
+    </div>
   </div>
 </Section>
 
@@ -137,16 +193,33 @@
   background="black"
   titleColor="white"
 >
-  <Timeline />
+  <div id="Timeline">
+    <Timeline />
+  </div>
 </Section>
 
 <Section padding="4rem 0 8rem" title="Video Player">
-  <Video />
+  <div id="Video">
+    <Video />
+  </div>
 </Section>
 
 <style>
-  h3 {
-    color: white;
+  aside {
     text-align: center;
+  }
+  p {
+    display: block;
+    margin-bottom: 0;
+    color: white;
+    font-size: 1.25rem;
+  }
+  select {
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    outline: none;
+    font-size: 1.25rem;
   }
 </style>
