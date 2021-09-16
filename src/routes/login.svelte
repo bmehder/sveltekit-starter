@@ -23,14 +23,7 @@
   }
 </script>
 
-<Section
-  padding="5rem 0 2rem"
-  background="#111"
-  title="Login"
-  titleColor="white"
-/>
-
-<Section padding="6rem 0" background="darkorange">
+<Section padding="6rem 0" background="darkorange" title="Login">
   <form on:submit|preventDefault>
     <input
       type="text"
