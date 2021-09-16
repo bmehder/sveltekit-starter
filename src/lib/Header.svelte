@@ -52,7 +52,7 @@
 <style>
   header {
     width: 100%;
-    padding: 3em 0;
+    padding: 2em 0;
     background: darkorange;
     color: #222;
     text-align: center;

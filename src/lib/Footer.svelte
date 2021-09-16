@@ -5,12 +5,15 @@
   export let color = 'white'
   export let height = ''
 
-  const date = new Date().getFullYear()
+  const year = new Date().getFullYear()
 </script>
 
 <footer style="height:{height};background:{background};color:{color};">
   <div>
-    <slot />
+    <p>
+      © {year}
+      <slot />. All rights reserved.
+    </p>
     <p on:click={scrollToTop}>
       Back to Top <i class="fa fa-arrow-up" aria-hidden="true" />
     </p>
@@ -25,6 +28,9 @@
     max-width: 960px;
     margin: auto;
     padding: 2em;
+  }
+  p {
+    margin-bottom: 0;
   }
   i {
     width: 25px;
