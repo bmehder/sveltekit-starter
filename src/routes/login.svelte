@@ -7,7 +7,7 @@
   let username = ''
   let password = ''
 
-  $: isEmptyFields = username.length < 1 || password.length < 1
+  $: isEmptyFields = username === '' || password === ''
 
   async function handleLogin() {
     const json = await loginUser(loginUrl, {

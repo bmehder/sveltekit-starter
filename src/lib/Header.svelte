@@ -5,7 +5,7 @@
   export let sticky = false
   export let uppercase = false
   export let background = 'white'
-  export let color = '#001515'
+  export let color = '#001516'
 
   let mobile = false
   const showMobile = () => (mobile = !mobile)

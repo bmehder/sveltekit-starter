@@ -22,7 +22,7 @@
     >
       <div>
         <a on:click|self={toggleNav} href="/"
-          ><img class="logo" src="/logo.svg" alt="Fischer Imaging Logo" /></a
+          ><img class="logo" src="/logo.svg" alt="Acme Logo" /></a
         >
         <span on:click|self={toggleNav}>&times;</span>
       </div>
@@ -68,7 +68,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 3em;
+    padding: 1em 2em;
   }
   nav div a {
     line-height: 1.5em;
@@ -87,7 +87,8 @@
     text-shadow: 1px 1px 1em rgba(0, 0, 0, 0.5);
   }
   a:hover {
-    color: darkorange;
+    color: black;
+    text-shadow: 1px 1px 1em rgba(255, 255, 255, 0.5);
   }
   div nav span {
     font-size: 4em;

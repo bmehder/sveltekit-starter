@@ -32,6 +32,9 @@
   p {
     margin-bottom: 0;
   }
+  p:last-child {
+    cursor: pointer;
+  }
   i {
     width: 25px;
     height: 25px;
