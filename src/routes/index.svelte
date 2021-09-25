@@ -4,7 +4,7 @@
 
 <main>
   <Section
-    padding="4rem 2rem 6rem"
+    padding="4rem 0 6rem"
     background="#02075d"
     color="white"
     title="2 Columns"
@@ -29,7 +29,7 @@
       </p>
     </div>
   </Section>
-  <Section padding="4rem 2rem 6rem" title="2/3 + 1/3 Columns">
+  <Section padding="4rem 0 6rem" title="2/3 + 1/3 Columns">
     <div class="flex">
       <p style="flex: 2;">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
@@ -55,7 +55,7 @@
       </p>
     </div>
   </Section>
-  <Section padding="4rem 2rem 6rem" background="darkorange" title="3 Columns">
+  <Section padding="4rem 0 6rem" background="darkorange" title="3 Columns">
     <div class="flex">
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
@@ -84,7 +84,7 @@
     </div>
   </Section>
   <Section
-    padding="4rem 2rem 6rem"
+    padding="4rem 0 6rem"
     background="#222"
     color="white"
     title="4 Columns"

@@ -73,12 +73,6 @@
     color: #02075d;
     border-bottom: 4px solid #02075d;
   }
-  div {
-    display: none;
-  }
-  nav ul li:hover > div {
-    display: block;
-  }
   .uppercase {
     text-transform: uppercase;
   }
