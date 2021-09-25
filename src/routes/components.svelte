@@ -28,9 +28,10 @@
 
 <Section
   padding="4rem 0"
-  background="black"
-  title="Svelte Components"
+  title="Web Components"
   titleColor="white"
+  background="black"
+  color="white"
 >
   <Flex justify="center">
     <aside>
@@ -211,7 +212,6 @@
   p {
     display: block;
     margin-bottom: 0;
-    color: white;
     font-size: 1.25rem;
   }
   select {

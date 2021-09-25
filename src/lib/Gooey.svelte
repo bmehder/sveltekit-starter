@@ -1,9 +1,8 @@
 <script>
-  import { fly } from "svelte/transition";
+  import { fly } from 'svelte/transition'
 </script>
 
-<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
-  <!-- <h3>Gooey SVG Spinner</h3> -->
+<aside in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
   <svg>
     <filter id="gooey">
       <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
@@ -19,18 +18,14 @@
     <span style="--i:6;" />
     <span style="--i:7;" />
   </div>
-</section>
+</aside>
 
 <style>
-  /* h3 {
-    color: darkorange;
-  } */
-  section {
+  aside {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: #000; */
   }
   .loader {
     position: relative;
@@ -47,7 +42,7 @@
     animation-delay: calc(0.2s * var(--i));
   }
   .loader span:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: calc(50% - 20px);

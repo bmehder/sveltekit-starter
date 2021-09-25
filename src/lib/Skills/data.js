@@ -1,4 +1,4 @@
-import { bounceOut, backOut, elasticOut } from 'svelte/easing'
+import { bounceOut } from 'svelte/easing'
 
 export const skillsData = [
   {

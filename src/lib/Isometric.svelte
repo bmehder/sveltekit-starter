@@ -1,20 +1,16 @@
 <script>
-  import { onMount } from 'svelte'
-  import { fly } from 'svelte/transition'
-
-  onMount(() => {
-    const text = document.getElementById('text')
+  const init = element => {
     let shadow = ''
     for (let i = 0; i < 32; i++) {
       shadow += (shadow ? ',' : '') + -i * 1 + 'px ' + i * 1 + 'px 0 #d9d9d9'
     }
-    text.style.textShadow = shadow
-  })
+    element.style.textShadow = shadow
+  }
 </script>
 
-<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
-  <div id="text" data-text="Text">Text</div>
-</section>
+<article>
+  <div use:init>Text</div>
+</article>
 
 <style>
   @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
@@ -25,7 +21,7 @@
     padding: 0;
   }
 
-  section {
+  article {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +30,7 @@
     overflow-x: hidden;
   }
 
-  #text {
+  div {
     position: relative;
     max-width: 80vw;
     color: #fff;
@@ -47,7 +43,7 @@
     transform: rotate(-28deg) skew(25deg);
   }
 
-  #text::before {
+  div::before {
     content: attr(data-text);
     position: absolute;
     top: 30px;

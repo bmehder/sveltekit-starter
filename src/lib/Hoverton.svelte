@@ -1,22 +1,14 @@
-<section>
-  <button class="button" on:click|preventDefault>
-    Continue
-    <span />
-  </button>
-</section>
+<button class="button" on:click|preventDefault>
+  Continue
+  <span />
+</button>
 
 <style>
-  section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .button {
+  button {
     border: none;
     display: block;
     position: relative;
+    margin: auto;
     padding: 0.5em 2.2em;
     font-size: 25px;
     background: transparent;
@@ -26,12 +18,12 @@
     overflow: hidden;
   }
 
-  .button:hover,
-  .button:focus {
+  button:hover,
+  button:focus {
     color: white;
   }
 
-  .button span {
+  span {
     position: absolute;
     top: 0;
     left: 0;
@@ -42,7 +34,7 @@
     border: 5px solid darkorange;
   }
 
-  .button span::before {
+  span::before {
     content: '';
     position: absolute;
     width: 8%;
@@ -54,8 +46,8 @@
     transition: all 0.6s;
   }
 
-  .button:hover span::before,
-  .button:focus span::before {
+  button:hover span::before,
+  button:focus span::before {
     transform: translate(-50%, -50%) rotate(-90deg);
     width: 100%;
     background: darkorange;

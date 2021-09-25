@@ -28,8 +28,7 @@
 </script>
 
 {#if modal}
-  <Modal on:close={close}>
-    <!-- <Form on:close={close} /> -->
+  <Modal on:click={close}>
     <h3>Hi, I'm a modal.</h3>
   </Modal>
 {/if}

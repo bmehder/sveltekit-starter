@@ -7,7 +7,6 @@
 </script>
 
 <section id="audio" in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
-  <!-- <h3>Audio Player</h3> -->
   <article>
     <figure>
       <img src={image} alt="Background" />

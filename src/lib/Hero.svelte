@@ -5,13 +5,12 @@
 
   let onLoad = false
 
-  const doLoaded = () => (onLoad = true)
+  const init = () => (onLoad = true)
 </script>
 
-<section use:doLoaded>
+<article use:init>
   {#if onLoad}
     <img
-      class="hero"
       src={image}
       alt="Hero"
       in:fly={{ delay: 500, duration: 300, x: -1000, y: 0, opacity: 0 }}
@@ -34,10 +33,10 @@
       </p>
     </div>
   {/if}
-</section>
+</article>
 
 <style>
-  section {
+  article {
     position: relative;
     padding-top: 56.25%;
   }
@@ -45,10 +44,8 @@
     position: absolute;
     top: -5%;
     right: -5%;
-    /* transform: translate(-50%, -50%); */
     padding: 3rem;
     background: rgba(250, 250, 250, 0.8);
-    /* color: #0e345a; */
     font-size: 2vw;
     font-weight: 500;
     letter-spacing: 2px;
@@ -73,7 +70,7 @@
     border-radius: 16px;
   }
   @media screen and (max-width: 640px) {
-    section div {
+    article div {
       display: none;
     }
   }

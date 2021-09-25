@@ -1,10 +1,8 @@
 <script>
   import { fly } from 'svelte/transition'
-  import { createEventDispatcher } from 'svelte'
-  let dispatch = createEventDispatcher()
 </script>
 
-<section on:click={() => dispatch('close')} />
+<section on:click />
 <article
   in:fly={{ y: -1000, duration: 400, delay: 500 }}
   out:fly={{ y: 1000, duration: 400, delay: 0 }}

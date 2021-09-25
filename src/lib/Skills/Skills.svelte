@@ -5,7 +5,7 @@
   let refresher = false
 </script>
 
-<svelte:window on:click={() => (refresher = !refresher)} />
+<svelte:body on:click={() => (refresher = !refresher)} />
 
 {#key refresher}
   <section>

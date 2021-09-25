@@ -31,11 +31,11 @@
     width: 100%;
     margin-bottom: 15px;
     background-color: rgba(2, 48, 71, 0.14);
-    font-weight: bold;
     overflow: hidden;
+    font-weight: bold;
+    border-radius: 50px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24),
       1px 1px 2px rgba(0, 0, 0, 0.24) inset;
-    border-radius: 50px;
   }
   span {
     position: absolute;
@@ -50,8 +50,8 @@
   }
   div {
     box-sizing: border-box;
-    text-align: right;
     padding: 1.5em 2em 1.5em 0;
+    text-align: right;
     color: white;
     border-radius: 50px;
     box-shadow: -4px 0px 4px rgba(200, 200, 200, 0.24) inset,

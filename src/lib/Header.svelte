@@ -1,14 +1,10 @@
 <script>
   import BounceNav from '$lib/BounceNav.svelte'
-  import SubMenu from '$lib/SubMenu.svelte'
 
   export let sticky = false
   export let uppercase = false
   export let background = 'white'
   export let color = '#001516'
-
-  let mobile = false
-  const showMobile = () => (mobile = !mobile)
 </script>
 
 <header class:sticky style="background:{background};color:{color};">
@@ -17,21 +13,8 @@
     <ul class:uppercase>
       <li><a href="/">Home</a></li>
       <li><a href="/about">About</a></li>
-      <li>
-        <a href="/blog">Blog</a>
-        <!-- <div>
-          <SubMenu
-            items={[
-              {
-                linkText: 'Authors',
-                href: '/authors',
-              },
-            ]}
-          />
-        </div> -->
-      </li>
+      <li><a href="/blog">Blog</a></li>
       <li><a href="/components">Components</a></li>
-      <!-- <li><a href="/contact">Contact Us</a></li> -->
       <li><a href="/login">Login</a></li>
       <li><a href="/profile">Profile</a></li>
     </ul>

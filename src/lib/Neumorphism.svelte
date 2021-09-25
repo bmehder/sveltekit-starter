@@ -1,14 +1,9 @@
-<script>
-  import { fly } from 'svelte/transition'
-</script>
-
-<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
-  <!-- <h3>Neumorphism</h3> -->
-  <div class="iPhone" />
-</section>
+<article>
+  <div />
+</article>
 
 <style>
-  section {
+  article {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +12,7 @@
     background: #e8eaf6;
     overflow-x: hidden;
   }
-  .iPhone {
+  div {
     position: relative;
     width: 230px;
     height: 410px;
@@ -29,11 +24,11 @@
     box-shadow: -120px 110px 5px rgba(0, 0, 0, 0.08);
     transition: 3.2s;
   }
-  .iPhone:hover {
+  div:hover {
     transform: rotate(-40deg) skew(20deg, 10deg) translate(30px, -30px);
     box-shadow: -150px 140px 10px rgba(0, 0, 0, 0.08);
   }
-  .iPhone:before {
+  div:before {
     content: '';
     position: absolute;
     top: 0;
@@ -47,7 +42,7 @@
     transform-origin: right;
     transform: skewY(-43deg);
   }
-  .iPhone:after {
+  div:after {
     content: '';
     position: absolute;
     bottom: -82px;

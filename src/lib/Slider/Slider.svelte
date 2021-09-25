@@ -10,7 +10,6 @@
   let testimonialIndex = 0
   let horizontalSlideDirection = 400
   let timerId = null
-  let isPaused = false
 
   const changeDirection = xOffset => (horizontalSlideDirection = xOffset)
 
