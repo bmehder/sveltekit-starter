@@ -2,6 +2,7 @@
   import Accordion from '$lib/Accordion/Accordion.svelte'
   import Audio from '$lib/Audio.svelte'
   import Countdown from '$lib/Countdown.svelte'
+  import FlashCards from '$lib/FlashCards/FlashCards.svelte'
   import Gooey from '$lib/Gooey.svelte'
   import Hero from '$lib/Hero.svelte'
   import Hoverton from '$lib/Hoverton.svelte'
@@ -40,6 +41,7 @@
         <option value="#Accordion">Accordion</option>
         <option value="#Audio">Audio</option>
         <option value="#Countdown">Countdown</option>
+        <option value="#FlashCards">Flash Cards</option>
         <option value="#Gooey">Gooey</option>
         <option value="#Hero">Hero</option>
         <option value="#Hoverton">Hoverton</option>
@@ -78,6 +80,12 @@
 <Section padding="4rem 0 8rem" title="Countdown">
   <div id="Countdown">
     <Countdown end="April 1, 2022 5:00:00 GMT" />
+  </div>
+</Section>
+
+<Section padding="4rem 0 6rem" background="#f1f1f1" title="Flash Cards">
+  <div id="FlashCards">
+    <FlashCards />
   </div>
 </Section>
 
