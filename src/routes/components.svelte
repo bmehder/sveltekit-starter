@@ -124,7 +124,7 @@
 </Section>
 
 <Section>
-  <div id="Modal">
+  <div id="Modal" style="position: relative;">
     <Modal />
   </div>
 </Section>
