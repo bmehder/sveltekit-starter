@@ -45,8 +45,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('https://source.unsplash.com/random/800x800/') no-repeat
-      center/cover;
+    /* background: url('https://source.unsplash.com/random/800x800/') no-repeat
+      center/cover; */
   }
   h1 {
     color: white;

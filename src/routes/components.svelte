@@ -123,7 +123,11 @@
   </div>
 </Section>
 
-<Section relative>
+<Section
+  relative
+  background="url('https://source.unsplash.com/random/800x800/') no-repeat
+      center/cover;"
+>
   <div id="Modal">
     <Modal />
   </div>

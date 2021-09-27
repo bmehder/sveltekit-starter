@@ -31,7 +31,8 @@
         on:click={scrollToTop}
         class="fa fa-arrow-up"
         aria-hidden="true"
-        transition:fly={{ x: 32 }}
+        in:fly={{ x: 32, opacity: 1 }}
+        out:fly={{ x: 32, opacity: 0 }}
       />
     {/if}
   </div>
@@ -60,6 +61,7 @@
     color: white;
     line-height: 52px;
     text-align: center;
+    border: 1px solid #525252;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     cursor: pointer;
