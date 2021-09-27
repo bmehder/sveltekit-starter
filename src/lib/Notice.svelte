@@ -37,6 +37,7 @@
     gap: 1em;
     margin: 2em;
     line-height: 1.5em;
+    border-radius: 8px;
   }
   p {
     margin-bottom: 0;

@@ -18,8 +18,8 @@
 
 <Head />
 
-<Header background="darkorange" />
+<Header background="var(--primary)" />
 <PageTransition refresh={key}>
   <slot />
 </PageTransition>
-<Footer background="#111" color="white">Acme Company</Footer>
+<Footer background="var(--primary-dark)" color="white">Acme Company</Footer>

@@ -31,7 +31,7 @@
   padding="4rem 0"
   title="Web Components"
   titleColor="white"
-  background="black"
+  background="var(--primary-dark)"
   color="white"
 >
   <Flex justify="center">
@@ -69,7 +69,7 @@
 <Section
   padding="4rem 0 6rem"
   title="Audio Player"
-  background="black"
+  background="var(--primary-dark)"
   titleColor="white"
 >
   <div id="Audio">
@@ -92,7 +92,7 @@
 <Section
   padding="4rem 0 6rem"
   title="Gooey SVG Spinner"
-  background="black"
+  background="var(--primary-dark)"
   titleColor="white"
 >
   <div id="Gooey">
@@ -142,11 +142,11 @@
 
 <Section padding="4rem 0 6rem" title="Notice">
   <div id="Notice">
-    <Notice padding="2em"
-      ><span style="font-size: 1.5em;line-height: 1.5em;"
-        >Click the "x", and I will disapear. I am have lots of props (padding,
-        background, fontSize, color, borderRadius, boxShadow)</span
-      ></Notice
+    <Notice padding="2em" fontSize="2em"
+      ><p>
+        Click the "x", and I will disapear. I am have lots of props (padding,
+        background, fontSize, color, borderRadius, boxShadow)
+      </p></Notice
     >
   </div>
 </Section>
@@ -177,7 +177,7 @@
 
 <Section
   padding="4rem 0 8rem"
-  background="black"
+  background="var(--primary-dark)"
   title="Slider"
   titleColor="white"
 >
@@ -199,7 +199,7 @@
 <Section
   padding="4rem 0 2rem"
   title="Timeline"
-  background="black"
+  background="var(--primary-dark)"
   titleColor="white"
 >
   <div id="Timeline">

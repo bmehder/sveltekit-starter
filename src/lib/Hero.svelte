@@ -39,6 +39,8 @@
   article {
     position: relative;
     padding-top: 56.25%;
+    box-shadow: var(--my-shadow);
+    border-radius: 16px;
   }
   div {
     position: absolute;
@@ -68,6 +70,7 @@
     width: 100%;
     height: 100%;
     border-radius: 16px;
+    object-fit: cover;
   }
   @media screen and (max-width: 640px) {
     article div {

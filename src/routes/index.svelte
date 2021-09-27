@@ -5,7 +5,7 @@
 <main>
   <Section
     padding="4rem 0 6rem"
-    background="#02075d"
+    background="var(--secondary)"
     color="white"
     title="2 Columns"
     titleColor="white"
@@ -55,7 +55,7 @@
       </p>
     </div>
   </Section>
-  <Section padding="4rem 0 6rem" background="darkorange" title="3 Columns">
+  <Section padding="4rem 0 6rem" background="var(--primary)" title="3 Columns">
     <div class="flex">
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
@@ -85,7 +85,7 @@
   </Section>
   <Section
     padding="4rem 0 6rem"
-    background="#222"
+    background="var(--secondary-dark)"
     color="white"
     title="4 Columns"
     titleColor="white"

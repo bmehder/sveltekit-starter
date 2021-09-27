@@ -24,9 +24,6 @@
 </section>
 
 <style>
-  section {
-    position: relative;
-  }
   .boxed {
     max-width: 960px;
     margin: auto;
