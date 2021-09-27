@@ -123,8 +123,8 @@
   </div>
 </Section>
 
-<Section>
-  <div id="Modal" style="position: relative;">
+<Section relative>
+  <div id="Modal">
     <Modal />
   </div>
 </Section>

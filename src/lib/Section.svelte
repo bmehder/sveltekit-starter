@@ -9,10 +9,12 @@
   export let align = 'center'
   export let height = ''
   export let minHeight = ''
+  export let relative
 </script>
 
 <section
   class:boxed
+  class:relative
   style="height:{height};min-height:{minHeight};background:{background};color:{color};margin:{margin};padding:{padding};"
 >
   <div class="content-wrap">
@@ -32,6 +34,9 @@
     max-width: 960px;
     margin: auto;
     padding: 0 2em;
+  }
+  .relative {
+    position: relative;
   }
   h3 {
     margin: 0 auto 1em;
