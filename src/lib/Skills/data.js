@@ -42,8 +42,8 @@ export const skillsData = [
     easing: bounceOut,
   },
   {
-    skill: 'Strapi',
-    percent: 52,
+    skill: 'Contentful',
+    percent: 10,
     color: '#8ECAE6',
     delay: 2400,
     duration: 2000,
