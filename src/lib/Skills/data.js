@@ -58,7 +58,7 @@ export const skillsData = [
     easing: bounceOut,
   },
   {
-    skill: 'GitHub',
+    skill: 'Git/GitHub',
     percent: 50,
     color: '#023047',
     delay: 1900,
