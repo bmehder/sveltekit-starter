@@ -50,7 +50,7 @@ export const skillsData = [
     easing: bounceOut,
   },
   {
-    skill: 'GraphQL',
+    skill: 'REST/GraphQL',
     percent: 32,
     color: '#219EBC',
     delay: 2100,
