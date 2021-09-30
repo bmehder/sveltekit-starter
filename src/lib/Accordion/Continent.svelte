@@ -82,7 +82,7 @@
   }
 
   section div button {
-    width: 150px;
+    width: 140px;
     font-weight: bold;
     color: white;
     background-color: #307ad5;

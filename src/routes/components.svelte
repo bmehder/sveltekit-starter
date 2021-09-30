@@ -66,7 +66,7 @@
   </div>
 </Section>
 
-<Section
+<!-- <Section
   padding="4rem 0 6rem"
   title="Audio Player"
   background="var(--primary-dark)"
@@ -75,7 +75,7 @@
   <div id="Audio">
     <Audio />
   </div>
-</Section>
+</Section> -->
 
 <Section padding="4rem 0 8rem" title="Countdown">
   <div id="Countdown">
@@ -144,7 +144,7 @@
   </div>
 </Section>
 
-<Section padding="4rem 0 6rem" title="Notice">
+<!-- <Section padding="4rem 0 6rem" title="Notice">
   <div id="Notice">
     <Notice padding="2em" fontSize="2em"
       ><p>
@@ -153,9 +153,9 @@
       </p></Notice
     >
   </div>
-</Section>
+</Section> -->
 
-<Section
+<!-- <Section
   height="100vh"
   padding="4rem 0"
   background="url('https://source.unsplash.com/random/') no-repeat center center/cover"
@@ -171,7 +171,7 @@
       />
     </Parallax>
   </div>
-</Section>
+</Section> -->
 
 <Section minHeight="100vh" padding="4rem 0" title="Skills">
   <div id="Skills">
@@ -200,7 +200,7 @@
   </div>
 </Section>
 
-<Section
+<!-- <Section
   padding="4rem 0 2rem"
   title="Timeline"
   background="var(--primary-dark)"
@@ -209,7 +209,7 @@
   <div id="Timeline">
     <Timeline />
   </div>
-</Section>
+</Section> -->
 
 <Section padding="4rem 0 8rem" title="Video Player">
   <div id="Video">
