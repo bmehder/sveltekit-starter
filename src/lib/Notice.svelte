@@ -35,7 +35,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 1em;
-    margin: 2em;
+    margin: 2em 0;
     line-height: 1.5em;
     border-radius: 8px;
   }
@@ -53,5 +53,11 @@
   }
   span:hover {
     transform: scale(2);
+  }
+  @media screen and (max-width: 600px) {
+    div {
+      width: 340px;
+      margin: auto;
+    }
   }
 </style>

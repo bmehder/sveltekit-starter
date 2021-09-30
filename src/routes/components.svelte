@@ -144,7 +144,7 @@
   </div>
 </Section>
 
-<!-- <Section padding="4rem 0 6rem" title="Notice">
+<Section padding="4rem 0 6rem" title="Notice">
   <div id="Notice">
     <Notice padding="2em" fontSize="2em"
       ><p>
@@ -153,7 +153,7 @@
       </p></Notice
     >
   </div>
-</Section> -->
+</Section>
 
 <!-- <Section
   height="100vh"
