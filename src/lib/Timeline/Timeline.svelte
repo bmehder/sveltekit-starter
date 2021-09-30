@@ -130,7 +130,7 @@
   @media screen and (max-width: 600px) {
     .container {
       width: 100%;
-      padding-left: 70px;
+      padding-left: 55px;
       padding-right: 25px;
     }
     .container::before {

@@ -201,16 +201,16 @@
     </div>
   </Section>
 
-  <!-- <Section
-  padding="4rem 0 2rem"
-  title="Timeline"
-  background="var(--primary-dark)"
-  titleColor="white"
->
-  <div id="Timeline">
-    <Timeline />
-  </div>
-</Section> -->
+  <Section
+    padding="4rem 0 2rem"
+    title="Timeline"
+    background="var(--primary-dark)"
+    titleColor="white"
+  >
+    <div id="Timeline">
+      <Timeline />
+    </div>
+  </Section>
 
   <Section padding="4rem 0 8rem" title="Video Player">
     <div id="Video">
