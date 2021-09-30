@@ -66,7 +66,7 @@
   </div>
 </Section>
 
-<!-- <Section
+<Section
   padding="4rem 0 6rem"
   title="Audio Player"
   background="var(--primary-dark)"
@@ -75,7 +75,7 @@
   <div id="Audio">
     <Audio />
   </div>
-</Section> -->
+</Section>
 
 <Section padding="4rem 0 8rem" title="Countdown">
   <div id="Countdown">

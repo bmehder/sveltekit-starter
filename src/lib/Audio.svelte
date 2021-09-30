@@ -30,14 +30,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    height: 350px;
+    width: 340px;
+    height: 340px;
     background: #f1f3f4;
   }
   figure {
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 340px;
   }
   img {
     position: absolute;
