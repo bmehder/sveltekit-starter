@@ -49,5 +49,8 @@
     .content-wrap {
       padding: 0 2em;
     }
+    :global(.components .content-wrap) {
+      padding: 0 1em;
+    }
   }
 </style>
