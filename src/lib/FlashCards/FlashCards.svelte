@@ -35,11 +35,10 @@
 
 <article>
   <main>
-    <div class="inner" class:flipped={isFlippedOver}>
+    <section class:flipped={isFlippedOver}>
       {#key index}
         <div
           style="background:{frontBgColor};"
-          class="front"
           in:fly={{ x: -xOffset, delay: 400 }}
           out:fly={{ x: xOffset }}
         >
@@ -53,7 +52,7 @@
           <h2>{data[index].word}</h2>
         </div>
       {/key}
-    </div>
+    </section>
   </main>
 
   <footer>
@@ -82,7 +81,7 @@
     height: 300px;
     perspective: 1000px;
   }
-  .inner {
+  section {
     position: relative;
     width: 100%;
     height: 100%;
@@ -90,18 +89,14 @@
     transition: transform 0.4s;
     transform-style: preserve-3d;
   }
-  :global(.flipped) {
-    transform: rotateY(180deg);
-  }
-  .front,
-  .back {
+  div {
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 1em;
     backface-visibility: hidden;
   }
-  .back {
+  div.back {
     display: grid;
     place-items: center;
     transform: rotateY(180deg);
@@ -123,5 +118,8 @@
     color: white;
     outline: none;
     cursor: pointer;
+  }
+  .flipped {
+    transform: rotateY(180deg);
   }
 </style>

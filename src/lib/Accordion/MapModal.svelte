@@ -1,58 +1,50 @@
 <script>
   import { fade, fly } from 'svelte/transition'
-  // 	export let learnURL;
   export let mapurl
 </script>
 
-<!-- The Modal -->
-<div id="myModal" class="modal" transition:fade>
-  <!-- Modal content -->
-  <div class="modal-content" in:fly={{ y: -500 }} out:fade>
-    <span class="close" on:click>&times;</span>
+<aside transition:fade>
+  <div in:fly={{ y: -500 }} out:fade>
+    <span on:click>&times;</span>
     <img src={mapurl} alt="map" />
   </div>
-</div>
+</aside>
 
 <style>
-  /* The Modal (background) */
-  .modal {
-    display: block; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+  aside {
+    display: grid;
+    position: fixed;
+    z-index: 1;
     left: 0;
-    top: 25%;
-    transform: translateY(-50%);
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    top: 0;
+    width: 100%;
+    height: 100%;
     overflow: auto;
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
-  /* Modal Content/Box */
-  .modal-content {
+  div {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: auto;
     text-align: center;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
   }
 
   img {
     width: 50%;
   }
 
-  /* The Close Button */
-  .close {
+  span {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
 
-  .close:hover,
-  .close:focus {
+  span:hover,
+  span:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;

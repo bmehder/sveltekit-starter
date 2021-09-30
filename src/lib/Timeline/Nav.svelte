@@ -42,7 +42,6 @@
   }
   button {
     background: #ff9f55;
-    color: #474e5d;
     outline: none;
     border: none;
     font-weight: bold;

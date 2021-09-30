@@ -8,21 +8,17 @@
   let isOpen
 </script>
 
-<button
-  class:active={isOpen}
-  class="accordion"
-  on:click={() => (isOpen = !isOpen)}
->
+<header class:active={isOpen} on:click={() => (isOpen = !isOpen)}>
   <span class="heading">{heading}</span>
   {#if isOpen}
     <span class="icon">&minus;</span>
   {:else}
     <span class="icon">&plus;</span>
   {/if}
-</button>
+</header>
 
 {#key isOpen}
-  <section class:open-panel={isOpen} class="panel" transition:slide>
+  <section class:open-panel={isOpen} transition:slide>
     <p>{content}</p>
 
     <div>
@@ -35,14 +31,14 @@
 {/key}
 
 <style>
-  button.accordion {
+  header {
     width: 100%;
     padding: 15px;
     margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(#e1e2e4, #f1f1f1);
+    background: #f1f1f1;
     text-align: left;
     color: #333;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -50,13 +46,13 @@
     transition: 0.3s;
   }
 
-  button.accordion:hover,
-  button.accordion.active {
+  header:hover,
+  header.active {
     background: #307ad5;
     color: white;
   }
 
-  .heading {
+  header span {
     font-size: 1.5rem;
   }
 
@@ -66,25 +62,19 @@
     padding: 20px 40px;
     margin: auto 0;
   }
-  span.icon {
-    font-size: 1.8rem;
-  }
-
-  section.panel {
+  section {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     height: 0px;
     overflow: auto;
     transition: all 0.5s;
   }
-
   section.open-panel {
     height: auto;
+    padding: 1em 0;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
   }
-
   section.open-panel div {
     width: 100%;
     display: flex;

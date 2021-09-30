@@ -12,10 +12,6 @@
   }
 </script>
 
-<header>
-  <p>Packing a lot of information into a small space</p>
-</header>
-
 <main>
   {#if modalShowing}
     <MapModal mapurl={continentMap} on:click={() => (modalShowing = false)} />
@@ -32,11 +28,6 @@
 </main>
 
 <style>
-  header {
-    width: 100%;
-    text-align: center;
-    color: #333;
-  }
   main {
     max-width: 960px;
     margin: auto;
