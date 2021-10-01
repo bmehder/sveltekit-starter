@@ -36,6 +36,7 @@
     line-height: 1.5rem;
     border-radius: 2px;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
   }
   h2 {
     margin: 0;
@@ -45,6 +46,9 @@
     background: #f1f1f1;
     color: #02075d;
     text-transform: capitalize;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   p {
     padding: 2rem;

@@ -1,16 +1,11 @@
-<script context="module">
-  export const prerender = true
-</script>
-
 <script>
   import Section from '$lib/Section.svelte'
   import Hero from '$lib/Hero.svelte'
 </script>
 
-<Section padding="4rem 2rem">
-  <h1>About Us</h1>
+<Section padding="4rem 2rem" title="About Us" titleColor="white">
   <Hero />
-  <Section margin="0 -2rem" padding="2rem 0 0 0">
+  <Section margin="0 -2rem">
     <h3>Mission</h3>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Est animi aut
@@ -39,7 +34,7 @@
 </Section>
 
 <style>
-  h1 {
-    text-align: center;
+  h3 {
+    margin-top: 1em;
   }
 </style>

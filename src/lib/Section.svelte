@@ -1,6 +1,7 @@
 <script>
   export let boxed = false
   export let title = false
+  export let rounded = false
   export let margin = ''
   export let padding = ''
   export let background = ''
@@ -15,6 +16,7 @@
 <section
   class:boxed
   class:relative
+  class:rounded
   style="height:{height};min-height:{minHeight};background:{background};color:{color};margin:{margin};padding:{padding};"
 >
   <div class="content-wrap">
@@ -37,6 +39,9 @@
   }
   .relative {
     position: relative;
+  }
+  .rounded {
+    border-radius: 1em;
   }
   h3 {
     margin: 0 auto 1em;
