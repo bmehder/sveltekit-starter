@@ -42,8 +42,8 @@ export const skillsData = [
     easing: bounceOut,
   },
   {
-    skill: 'Contentful',
-    percent: 10,
+    skill: 'Prismic',
+    percent: 23,
     color: '#8ECAE6',
     delay: 2400,
     duration: 2000,
