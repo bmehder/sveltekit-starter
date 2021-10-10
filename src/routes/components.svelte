@@ -3,6 +3,7 @@
   import Audio from '$lib/Audio.svelte'
   import Countdown from '$lib/Countdown.svelte'
   import FlashCards from '$lib/FlashCards/FlashCards.svelte'
+  import FlexGallery from '$lib/FlexGallery/App.svelte'
   import Gooey from '$lib/Gooey.svelte'
   import Hero from '$lib/Hero.svelte'
   import Hoverton from '$lib/Hoverton.svelte'
@@ -12,6 +13,7 @@
   import Notice from '$lib/Notice.svelte'
   import Slider from '$lib/Slider/Slider.svelte'
   import Skills from '$lib/Skills/Skills.svelte'
+  import StickyNotes from '$lib/StickyNotes/App.svelte'
   import Parallax from '$lib/Parallax.svelte'
   import Tabs from '$lib/Tabs/Tabs.svelte'
   import Timeline from '$lib/Timeline/App.svelte'
@@ -43,6 +45,7 @@
           <option value="#Audio">Audio</option>
           <option value="#Countdown">Countdown</option>
           <option value="#FlashCards">Flash Cards</option>
+          <option value="#FlexGallery">Flex Gallery</option>
           <option value="#Gooey">Gooey</option>
           <option value="#Hero">Hero</option>
           <option value="#Hoverton">Hoverton</option>
@@ -52,6 +55,7 @@
           <option value="#Notice">Notice</option>
           <option value="#Slider">Slider</option>
           <option value="#Skills">Skills</option>
+          <option value="#StickyNotes">Sticky Notes</option>
           <option value="#Parallax">Parallax</option>
           <option value="#Tabs">Tabs</option>
           <option value="#Timeline">Timeline</option>
@@ -89,6 +93,10 @@
       <FlashCards />
     </div>
   </Section>
+
+  <div id="FlexGallery">
+    <FlexGallery />
+  </div>
 
   <Section
     padding="4rem 0 6rem"
@@ -190,6 +198,12 @@
       <div id="Slider">
         <Slider />
       </div>
+    </div>
+  </Section>
+
+  <Section background="#307ad5" padding="4rem 0" title="Sticky Notes">
+    <div id="StickyNotes">
+      <StickyNotes />
     </div>
   </Section>
 
