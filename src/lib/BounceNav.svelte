@@ -1,6 +1,7 @@
 <script>
   import { slide, fade } from 'svelte/transition'
   import { bounceOut } from 'svelte/easing'
+  import SubMenu from '$lib/SubMenu.svelte'
 
   let isNavOpen
 
@@ -27,13 +28,20 @@
         <span on:click|self={toggleNav}>&times;</span>
       </div>
       <div>
-        <a on:click={toggleNav} href="/">Home</a>
-        <a on:click={toggleNav} href="/about">About</a>
-        <a on:click={toggleNav} href="/blog">Blog</a>
-        <a on:click={toggleNav} href="/components">Components</a>
-        <!-- <a on:click={toggleNav} href="/contact">Contact Us</a> -->
-        <a on:click={toggleNav} href="/login">Login</a>
-        <a on:click={toggleNav} href="/profile">Profile</a>
+        <ul>
+          <li on:click={toggleNav}><a href="/">Home</a></li>
+          <li on:click={toggleNav}>
+            <a href="/about">About</a>
+            <SubMenu
+              items={[{ href: '/about/subpage', linkText: 'Subpage' }]}
+            />
+          </li>
+          <li on:click={toggleNav}><a href="/blog">Blog</a></li>
+          <li on:click={toggleNav}><a href="/components">Components</a></li>
+          <!-- <a href="/contact">Contact Us</a> -->
+          <li on:click={toggleNav}><a href="/login">Login</a></li>
+          <li on:click={toggleNav}><a href="/profile">Profile</a></li>
+        </ul>
       </div>
     </nav>
   {:else}

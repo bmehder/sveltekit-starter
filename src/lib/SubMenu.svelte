@@ -1,8 +1,10 @@
 <script>
+  import { slide } from 'svelte/transition'
+
   export let items = []
 </script>
 
-<ul>
+<ul transition:slide>
   {#each items as { href, linkText }}
     <li><a {href}>{linkText}</a></li>
   {/each}
@@ -10,6 +12,7 @@
 
 <style>
   ul {
+    display: none;
     position: absolute;
     top: 2rem;
     left: 50%;
@@ -20,10 +23,6 @@
     font-size: 1.1rem;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.24);
     z-index: 1000;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
   }
   li {
     margin-bottom: 1rem;
@@ -38,5 +37,14 @@
   }
   a:hover {
     border-bottom: 2px solid;
+  }
+  @media screen and (max-width: 900px) {
+    ul {
+      display: inline-block;
+      position: relative;
+      top: 0;
+      left: auto;
+      transform: none;
+    }
   }
 </style>

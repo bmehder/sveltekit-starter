@@ -1,5 +1,6 @@
 <script>
   import BounceNav from '$lib/BounceNav.svelte'
+  import SubMenu from '$lib/SubMenu.svelte'
 
   export let sticky = false
   export let uppercase = false
@@ -12,7 +13,10 @@
     <a href="/"><img class="logo" src="/logo.svg" alt="Acme Logo" /></a>
     <ul class:uppercase>
       <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
+      <li>
+        <a href="/about">About</a>
+        <SubMenu items={[{ href: '/about/subpage', linkText: 'Subpage' }]} />
+      </li>
       <li><a href="/blog">Blog</a></li>
       <li><a href="/components">Components</a></li>
       <li><a href="/login">Login</a></li>
@@ -72,6 +76,9 @@
     padding-bottom: 1rem;
     color: #02075d;
     border-bottom: 4px solid #02075d;
+  }
+  :global(nav ul li:hover ul) {
+    display: inline-block;
   }
   .uppercase {
     text-transform: uppercase;
