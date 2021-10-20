@@ -1,6 +1,7 @@
 <script>
   import Accordion from '$lib/Accordion/Accordion.svelte'
   import Audio from '$lib/Audio.svelte'
+  import Chart from '$lib/Chart/App.svelte'
   import Countdown from '$lib/Countdown.svelte'
   import FlashCards from '$lib/FlashCards/FlashCards.svelte'
   import FlexGallery from '$lib/FlexGallery/App.svelte'
@@ -43,6 +44,7 @@
         <select bind:value on:change={handleOnChange}>
           <option value="#Accordion">Accordion</option>
           <option value="#Audio">Audio</option>
+          <option value="#Chart">Chart</option>
           <option value="#Countdown">Countdown</option>
           <option value="#FlashCards">Flash Cards</option>
           <option value="#FlexGallery">Flex Gallery</option>
@@ -81,6 +83,10 @@
       <Audio />
     </div>
   </Section>
+
+  <div id="Chart">
+    <Chart />
+  </div>
 
   <Section padding="4rem 0 8rem" title="Countdown">
     <div id="Countdown">

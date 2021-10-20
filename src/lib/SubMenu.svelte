@@ -1,10 +1,8 @@
 <script>
-  import { slide } from 'svelte/transition'
-
   export let items = []
 </script>
 
-<ul transition:slide>
+<ul>
   {#each items as { href, linkText }}
     <li><a {href}>{linkText}</a></li>
   {/each}
