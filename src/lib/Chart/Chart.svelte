@@ -1,7 +1,6 @@
-<script context="module">
-  // import Chart from 'chart.js/auto'
-</script>
-
+<!-- <script context="module">
+  import Chart from 'chart.js/auto'
+</script> -->
 <script>
   export let config
 
@@ -20,11 +19,10 @@
   }
 </script>
 
-<canvas use:handleChart={config} />
+<canvas use:handleChart={config} on:dblclick />
 
 <style>
   canvas {
-    max-width: 1200px;
-    max-height: 80vh;
+    max-height: 65vh;
   }
 </style>

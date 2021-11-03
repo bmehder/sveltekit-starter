@@ -1,13 +1,13 @@
 {
   "labels": [
-    "Aurora",
-    "Goldon",
-    "Thornton",
-    "Colorado Springs"
+    "London",
+    "Rotterdam",
+    "Chicago",
+    "Copenhagen"
   ],
   "datasets": [
     {
-      "label": "Appointment Requests (by location)",
+      "label": "Some Data (by location)",
       "backgroundColor": [
         "#3e95cd",
         "#8e5ea2",

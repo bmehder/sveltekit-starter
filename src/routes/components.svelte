@@ -1,5 +1,4 @@
 <script>
-  import { scale } from 'svelte/transition'
   import Accordion from '$lib/Accordion/Accordion.svelte'
   import Audio from '$lib/Audio.svelte'
   import Chart from '$lib/Chart/App.svelte'
@@ -23,15 +22,13 @@
   import Section from '$lib/Section.svelte'
   import Flex from '$lib/Flex.svelte'
 
-  let sectionEl, value, innerWidth
+  let sectionEl, value
 
   const handleOnChange = e => {
     sectionEl = document.querySelector(value)
     sectionEl.scrollIntoView({ block: 'center' })
   }
 </script>
-
-<svelte:window bind:innerWidth />
 
 <div class="components">
   <Section
@@ -47,9 +44,7 @@
         <select bind:value on:change={handleOnChange}>
           <option value="#Accordion">Accordion</option>
           <option value="#Audio">Audio</option>
-          {#if innerWidth > 985}
-            <option value="#Chart">Chart</option>
-          {/if}
+          <option value="#Chart">Chart</option>
           <option value="#Countdown">Countdown</option>
           <option value="#FlashCards">Flash Cards</option>
           <option value="#FlexGallery">Flex Gallery</option>
@@ -89,11 +84,9 @@
     </div>
   </Section>
 
-  {#if innerWidth > 985}
-    <div id="Chart" transition:scale>
-      <Chart />
-    </div>
-  {/if}
+  <div id="Chart">
+    <Chart />
+  </div>
 
   <Section padding="4rem 0 8rem" title="Countdown">
     <div id="Countdown">

@@ -1,0 +1,62 @@
+{
+    "labels": [
+        "August",
+        "September",
+        "October",
+        "November"
+    ],
+    "datasets": [
+        {
+            "label": "London",
+            "backgroundColor": "#3e95cd",
+            "data": [
+                7,
+                1,
+                8,
+                0
+            ],
+            "tension": 0.32,
+            "borderWidth": 1,
+            "fill": true
+        },
+        {
+            "label": "Rotterdam",
+            "backgroundColor": "#8e5ea2",
+            "data": [
+                5,
+                3,
+                11,
+                0
+            ],
+            "tension": 0.32,
+            "borderWidth": 1,
+            "fill": true
+        },
+        {
+            "label": "Chicago",
+            "backgroundColor": "#3cba9f",
+            "data": [
+                1,
+                4,
+                5,
+                0
+            ],
+            "tension": 0.32,
+            "borderWidth": 1,
+            "fill": true
+        },
+        {
+            "label": "Copenhagen",
+            "backgroundColor": "#e8c3b9",
+            "data": [
+                0,
+                0,
+                9,
+                1
+            ],
+            "tension": 0.32,
+            "borderWidth": 1,
+            "fill": true
+        }
+    ]
+}
